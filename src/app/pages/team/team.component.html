@@ -1,0 +1,39 @@
+<div class="teamBlock">
+    <div class="headerTeam">
+        <div class="headerTeamTxt">
+            <h3>MEET OUR TEAM</h3>
+            <p>Our skilled and experienced team of ski instructors makes us the perfect choice for all levels of skier – from beginner to professional. All of our instructors are fully qualified and all lessons are delivered in English.</p>
+        </div>
+    </div>
+    <div style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" *ngFor="let member of teams">
+                    <img src={{member.image}}>
+                    <a [routerLink]="['/team/'+member.name, member.id]"><h5>{{member.name | uppercase}}</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="averageBlock">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>ADVANTAGES</h3>
+                    <ul>
+                        <li>Private lessons</li>
+                        <li>Off piste adventures</li>
+                        <li>Snowboarding</li>
+                        <li>Kids group lessons</li>
+                        <li>Adult group lessons</li>
+                        <li>Corporate</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <p>At SnowLimits, we tailor our lessons to suit all ages and abilities. The fact that we know the Three Valleys like the back of our hands, enables us to find the best routes around the mountain to suit your ability. Our expertise will ensure that you experience the best pistes and the best the snow conditions for that day, each time you ski with us. A ski lesson with SnowLimits will help you get more from your skiing, ensuring progression to the next level and – most importantly – show you a good time!</p>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fteam5.jpg?alt=media&token=68c7beee-03b1-4fe4-8cac-d6f0f4f7938d" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

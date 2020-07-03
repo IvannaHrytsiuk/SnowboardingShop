@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="leftAside">
+        <div class="col-md-3">
+            <h4>Category:</h4>
+            <ul>
+                <a *ngFor="let categ of category; let i=index" [routerLink]="[ '/shop/'+ categ.id ]" routerLinkActive="active">
+                    <li>{{categ.categoriesName}}</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="mainAside">
+        <div class="row">
+            <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of products">
+                <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
+                <div class="card-body">
+                <h5 class="card-title">{{prod.productName}}</h5>
+                <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
+                <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
+                <p class="prodPrice" >{{prod.price |currency}}</p>
+                <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,227 @@
+<div class="container">
+    <div class="buttonBlock">
+        <button (click)="addOpenModal(addNewProd)">Add new product</button>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Category name</th>
+            <th scope="col">Product name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            <th scope="col">Show more</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of productAdmin; let i=index">
+            <th>{{i+1}}</th>
+            <td>{{product.categories.categoriesName}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.price | currency}}</td>
+            <td><img src={{product.image}}></td>
+            <td><button type="button" class="btn btn-dark" (click)="openModal(showMore, product)">Show more</button></td>
+            <td><button type="button" class="btn btn-warning" (click)="editOpenModal(edit, product)">Edit</button></td>
+            <td><button type="button" class="btn btn-danger" (click)="markDeleteProductModal(deleteM, product)">Delete</button></td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+ 
+<ng-template #showMore>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">{{productName}}</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body modalContent">
+        <div class="row">
+            <div class="col-md-6">
+                <img src={{productImage}} alt="">
+            </div>
+            <div class="col-md-6">
+                <p><strong>Category: </strong> {{productCategory}};</p>
+                <p><strong>Type: </strong> {{productType}};</p>
+                <p><strong>Ability Level: </strong> {{productLevel}};</p>
+            </div>
+            <h4><span>Price: </span> {{productPrice | currency}}</h4>
+            <div class="information">
+                <p><strong>Description: </strong> {{productDescription}}</p>
+                <p><strong>Size: </strong> {{productSize}};</p>
+                <p><strong>Width: </strong> {{productWidth}};</p>
+                <p><strong>Laminates: </strong> {{productLaminates}};</p>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #addNewProd>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Add new products</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Category:</label>
+        <div class="col-sm-10">
+          <select class="form-control" [(ngModel)]="selectedOption" name="selectedOption">
+              <option *ngFor="let category of categoryAdmin" value={{category.id}}>{{category.categoriesName}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductName" [(ngModel)]="addProductName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Type:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductType" [(ngModel)]="addProductType">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Description:</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" name="addProductDescription" [(ngModel)]="addProductDescription"></textarea>                
+        </div>
+    </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Size:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductSize" [(ngModel)]="addProductSize">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Width:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductWidth" [(ngModel)]="addProductWidth">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Laminates:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductLaminates" [(ngModel)]="addProductLaminates">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Ability Level:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductLevel" [(ngModel)]="addProductLevel">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Price:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" name="addProductPrice" [(ngModel)]="addProductPrice">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Image:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="addProductImageUrl" [(ngModel)]="addProductImageUrl">
+        </div>
+      </div>
+      <div class="modalFooter">
+        <button type="button" class="btn btn-light" (click)="modalRef.hide()">Cancel</button>
+        <button type="button" class="btn btn-dark"  (click)="addProduct()">Add products</button>
+    </div>
+    </div>
+  </ng-template>
+
+  <ng-template #edit>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Edit product</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Category:</label>
+        <div class="col-sm-10">
+          <select class="form-control" [(ngModel)]="editSelectedOption" name="editSelectedOption">
+            <option *ngFor="let category of categoryAdmin" value={{category.id}}>{{category.categoriesName}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductName" [(ngModel)]="editProductName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Type:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductType" [(ngModel)]="editProductType">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Description:</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" name="editProductDescription" [(ngModel)]="editProductDescription"></textarea>                
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Size:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductSize" [(ngModel)]="editProductSize">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Width:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductWidth" [(ngModel)]="editProductWidth">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Laminates:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductLaminates" [(ngModel)]="editProductLaminates">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Ability Level:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductLevel" [(ngModel)]="editProductLevel">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Price:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" name="editProductPrice" [(ngModel)]="editProductPrice">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Image:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="editProductImageUrl" [(ngModel)]="editProductImageUrl">
+        </div>
+      </div>
+      <div class="modalFooter">
+        <button type="button" class="btn btn-light" (click)="modalRef.hide()">Cancel</button>
+        <button type="button" class="btn btn-dark"  (click)="addProduct()">Save edit</button>
+      </div>
+    </div>
+</ng-template>
+
+<ng-template #deleteM>
+  <div class="modal-header">
+    <h4 class="modal-title pull-center">Are you sure?</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="deleteProduct" style="text-align: center;">
+      <button type="button" class="btn btn-light" (click)="modalRef.hide()">No</button>
+      <button type="button" class="btn btn-dark" (click)="doDeleteProduct()">Yes</button>
+  </div>
+</ng-template>

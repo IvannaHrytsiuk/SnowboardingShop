@@ -1,0 +1,44 @@
+.buttonBlock{
+    text-align: right;
+}
+.buttonBlock button{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.buttonBlock button:hover{
+    background-color: #555;
+}
+td img{
+    width: 50px;
+    height: 50px;
+}
+.modalContent img{
+    width: 70%;
+}
+.modalContent h4{
+    font-weight: 700;
+    color: rgb(255, 238, 0);
+    margin: 15px;
+}
+span{
+    color: black;
+}
+.information{
+    margin: 15px;
+}
+.modalFooter{
+    text-align: right;
+}
+.modalFooter button{
+    margin: 10px;
+}
+textarea{
+    height: 200px;
+}
+.deleteProduct button{
+    margin:20px;
+    padding: 10px 90px;
+}

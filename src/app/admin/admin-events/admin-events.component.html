@@ -1,0 +1,170 @@
+<div class="container">
+    <div class="buttonBlock">
+        <button (click)="addModal(addNew)">Add new event</button>
+    </div>
+    <div class="row">
+        <div *ngFor="let event of admEvents" class="eventBox col-md-6" (click)="showMore(info)">
+            <h3>{{event.name}}</h3>
+            <p>{{event.date}}</p>
+            <ng-template #info>
+                <div class="modal-header">
+                  <h4 class="modal-title pull-left titleName">{{event.name}}</h4>
+                  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-6 imageBlock">
+                          <img src={{event.image}} >
+                      </div>
+                      <div class="col-md-6 generalInform">
+                        <h5>{{event.name}}: {{event.slogan}}</h5>
+                        <h5>{{event.date}}</h5>
+                        <h5>{{event.location}}</h5>
+                        <h5>{{event.type}}</h5>
+                      </div>
+                      <div class="allInform">
+                          <p><strong>Description: </strong>{{event.description}}</p>
+                          <p><strong>What to wear: </strong>{{event.wear}}</p>
+                          <p><strong>What to pack: </strong>{{event.pack}}</p>
+                          <p><strong>Buy tickets: </strong>{{event.ticket}}</p>
+                          <p><strong>Things to do in {{event.location}}: </strong>{{event.toDo}}</p>
+                          <p><strong>How to get there: </strong>{{event.get}}</p>
+                          <p><strong>Oficial site: </strong><a>{{event.site}}</a></p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-3" style="background-image:url({{event.image1}})"></div>
+                      <div class="col-md-3" style="background-image:url({{event.image2}})"></div>
+                      <div class="col-md-3" style="background-image:url({{event.image3}})"></div>
+                  </div>
+                  <div class="btnGroup">
+                    <button type="button" class="btn btn-warning" (click)="editModal(editNested, event)" (click)="closeFirstModal()">Edit</button>
+                    <button type="button" class="btn btn-danger" (click)="markDeleteModal(delNested, event)" (click)="closeFirstModal()">Delete</button>
+                  </div>
+                </div>
+              </ng-template>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #addNew>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Add new event</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <label>Name: </label>
+        <input type="text" class="form-control" name="newName" [(ngModel)]="newName">
+        <label>Date (exp: 20 Mar - 27 Mar, 2021): </label>
+        <input type="text" class="form-control" name="newDate" [(ngModel)]="newDate">
+        <label>Type: </label>
+        <input type="text" class="form-control" name="newType" [(ngModel)]="newType">
+        <label>Video link: </label>
+        <input type="text" class="form-control" name="newVideo" [(ngModel)]="newVideo">
+        <label>Location: </label>
+        <input type="text" class="form-control" name="newLocation" [(ngModel)]="newLocation">
+        <label>Location lat: </label>
+        <input type="number" class="form-control" name="newLocationLat" [(ngModel)]="newLocationLat">
+        <label>Location lng: </label>
+        <input type="number" class="form-control" name="newLocationLng" [(ngModel)]="newLocationLng">
+        <label>Slogan: </label>
+        <input type="text" class="form-control" name="newSlogan" [(ngModel)]="newSlogan">
+        <label>Description: </label>
+        <textarea class="form-control" name="newDescrip" [(ngModel)]="newDescrip"></textarea>
+        <label>Image: </label>
+        <input type="text" class="form-control" name="newImg" [(ngModel)]="newImg">
+        <label>What to wear: </label>
+        <textarea class="form-control" name="newWear" [(ngModel)]="newWear"></textarea>
+        <label>What to pack: </label>
+        <textarea class="form-control" name="newPack" [(ngModel)]="newPack"></textarea>
+        <label>Buy ticket: </label>
+        <textarea class="form-control" name="newTicket" [(ngModel)]="newTicket"></textarea>
+        <label>What to do: </label>
+        <textarea class="form-control" name="newToDo" [(ngModel)]="newToDo"></textarea>
+        <label>How to get: </label>
+        <textarea class="form-control" name="newGet" [(ngModel)]="newGet"></textarea>
+        <label>Official site (url): </label>
+        <input type="text" class="form-control" name="newSite" [(ngModel)]="newSite">
+        <label>Image 1: </label>
+        <input type="text" class="form-control" name="newImg1" [(ngModel)]="newImg1">
+        <label>Image 2: </label>
+        <input type="text" class="form-control" name="newImg2" [(ngModel)]="newImg2">
+        <label>Image 3: </label>
+        <input type="text" class="form-control" name="newImg3" [(ngModel)]="newImg3">
+        <div class="btnGroup">
+            <button type="button" class="btn btn-light" (click)="modalRef.hide()">Cancel</button>
+            <button type="button" class="btn btn-dark" (click)="modalRef.hide()" (click)="addNewEvent()" [disabled]="!newName || !newDate || !newType || !newVideo || !newLocation || !newSlogan || !newDescrip || !newImg || !newWear || !newPack || !newTicket || !newToDo || !newGet || !newSite"> Add</button>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #editNested >
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Second modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef2.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <label>Name: </label>
+        <input type="text" class="form-control" name="editName" [(ngModel)]="editEvent.name">
+        <label>Date (exp: 8:00am 20 Mar - 11:30pm 27 Mar, 2021): </label>
+        <input type="text" class="form-control" name="editDate" [(ngModel)]="editEvent.date">
+        <label>Type: </label>
+        <input type="text" class="form-control" name="editType" [(ngModel)]="editEvent.type">
+        <label>Video link: </label>
+        <input type="text" class="form-control" name="editVideo" [(ngModel)]="editEvent.video">
+        <label>Location: </label>
+        <input type="text" class="form-control" name="editLocation" [(ngModel)]="editEvent.location">
+        <label>Location lat: </label>
+        <input type="number" class="form-control" name="editLocationLat" [(ngModel)]="editEvent.locationLat">
+        <label>Location lng: </label>
+        <input type="number" class="form-control" name="editLocationLng" [(ngModel)]="editEvent.locationLng">
+        <label>Slogan: </label>
+        <input type="text" class="form-control" name="editSlogan" [(ngModel)]="editEvent.slogan">
+        <label>Description: </label>
+        <textarea class="form-control" name="editDescrip" [(ngModel)]="editEvent.description"></textarea>
+        <label>Image: </label>
+        <input type="text" class="form-control" name="editImg" [(ngModel)]="editEvent.image">
+        <label>What to wear: </label>
+        <textarea class="form-control" name="editWear" [(ngModel)]="editEvent.wear"></textarea>
+        <label>What to pack: </label>
+        <textarea class="form-control" name="editPack" [(ngModel)]="editEvent.pack"></textarea>
+        <label>Buy ticket: </label>
+        <textarea class="form-control" name="editTicket" [(ngModel)]="editEvent.ticket"></textarea>
+        <label>What to do: </label>
+        <textarea class="form-control" name="editToDo" [(ngModel)]="editEvent.toDo"></textarea>
+        <label>How to get: </label>
+        <textarea class="form-control" name="editGet" [(ngModel)]="editEvent.get"></textarea>
+        <label>Official site (url): </label>
+        <input type="text" class="form-control" name="editSite" [(ngModel)]="editEvent.site">
+        <label>Image 1: </label>
+        <input type="text" class="form-control" name="editImg1" [(ngModel)]="editEvent.image1">
+        <label>Image 2: </label>
+        <input type="text" class="form-control" name="editImg2" [(ngModel)]="editEvent.image2">
+        <label>Image 3: </label>
+        <input type="text" class="form-control" name="editImg3" [(ngModel)]="editEvent.image3">
+        <div class="btnGroup">
+            <button type="button" class="btn btn-light" (click)="modalRef2.hide()">Cancel</button>
+            <button type="button" class="btn btn-dark" (click)="addNewEvent()" (click)="modalRef2.hide()"> Save edit</button>
+        </div>
+  </div>
+</ng-template> 
+
+<ng-template #delNested>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Are you sure?</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef3.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <button type="button" class="btn btn-dark" (click)="modalRef3.hide()">No</button>
+    <button type="button" class="btn btn-danger" (click)="deleteEvent()">Yes</button>
+  </div>
+</ng-template> 

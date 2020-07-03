@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="buttonBlock">
+        <button (click)="addCategoryModal(addCategory)">Add new category</button>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let category of adminCategory; let i=index">
+            <th>{{i+1}}</th>
+            <th>{{category.id}}</th>
+            <td>{{category.categoriesName}}</td>
+            <td><button type="button" class="btn btn-warning" (click)="editCategoryModal(edit, category)">Edit</button></td>
+            <td><button type="button" class="btn btn-danger" (click)="markDeleteCategoryModal(deleteM,category)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<ng-template #addCategory>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">New category</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body addCategoryBody">
+        <input type="text" class="form-control" placeholder="Category name" name="categoryName" [(ngModel)]="categoryName">
+        <div>
+            <button type="button" class="btn btn-light" [disabled]="categoryName.length >= 1" (click)="modalRef.hide()">Cancel</button>
+            <button type="button" class="btn btn-dark"  (click)="addNewCategory()" [disabled]="categoryName.length <1">Add category</button>
+        </div>
+    </div>
+  </ng-template>
+
+  <ng-template #edit>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Edit category</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body addCategoryBody">
+        <input type="text" class="form-control" name="editCategoryName" [(ngModel)]="editCategoryName">
+        <div>
+            <button type="button" class="btn btn-light" (click)="modalRef.hide()">Cancel</button>
+            <button type="button" class="btn btn-dark"  (click)="addNewCategory()">Save edit</button>
+        </div>
+  </div>
+</ng-template>
+
+<ng-template #deleteM>
+    <div class="modal-header">
+      <h4 class="modal-title pull-center">Are you sure?</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="deleteCategory" style="text-align: center;">
+        <button type="button" class="btn btn-light" (click)="modalRef.hide()">No</button>
+        <button type="button" class="btn btn-dark" (click)="deleteCategory()">Yes</button>
+    </div>
+</ng-template>

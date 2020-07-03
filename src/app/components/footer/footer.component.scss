@@ -1,0 +1,128 @@
+footer{
+    height: 320px;
+    background-color: black;
+    padding-top: 40px;
+}
+.isActive{
+    height: 500px;
+}
+h4{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+a{
+    color: #B8B6B6;
+    font-size: 0.825em;
+    padding: 0.3em 1em ;
+}
+#footerEmail input[type="text"]{
+    outline: none;
+    padding: 12px 15px;
+    color: #202020;
+    background: #FFF;
+    border: none;
+    width: 74%;
+    line-height: 1.5em;
+    font-size: 0.8125em;
+    margin-left: 6%;
+}
+#footerEmail input[type="submit"]{
+    background: #C7C7C7;
+    padding: 9px 19px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    line-height: 1.6em;
+    font-size: 1em;
+    color: #000;
+    font-weight: 800;
+    outline: none;
+    transition: all 0.3s;
+}
+.facebook{
+    width: 25px;
+    height: 25px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    background-position: -256px -276px;
+}
+.twitter{
+    width: 25px;
+    height: 25px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    background-position: -298px -276px;
+}
+.instagram{
+    width: 25px;
+    height: 25px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    background-position: -346px -276px;
+}
+.pinterest{
+    width: 25px;
+    height: 25px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    background-position: -391px -276px;
+}
+.youtube{
+    width: 47px;
+    height: 25px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    background-position: -437px -276px;
+}
+.social{
+    margin-top: 60px;
+}
+li{
+    margin: 0 10px;
+}
+.col-md-6 p{
+    color: #C7C7C7;
+    font-size: 0.825em;
+    margin-left: 15px;
+}
+.col-md-6{
+    margin-top: 50px;
+}
+#footerWebLink{
+    color: white;
+    font-size: 1em;
+}
+select{
+    outline: none;
+    color: white;
+    background-color: #000;
+    border: none;
+    width: 185px;
+}
+.drop button{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+}
+.drop ul{
+    background-color: #000;
+    color: white;
+    display: block;
+}
+.drop img{
+    float: right;
+}
+
+.drop a:hover{
+    background-color: white;
+    color: black;
+}
+option:hover{
+    color: #000;
+    background-color: white;
+}
+a:hover{
+    color: white;
+}
+#footerEmail input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}

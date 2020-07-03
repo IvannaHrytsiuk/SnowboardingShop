@@ -1,0 +1,49 @@
+header{
+    height: 100px;
+    background-color: black;
+    font-size: 13px;
+}
+div{
+    position: relative;
+    height: 100%;
+}
+ul{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.nav-item{
+    padding: 0 10px;
+}
+#firstSpriteHeader{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    width: 20px;
+    height: 20px;
+    background-position: -65px -10px;
+}
+#secondSpriteHeader{
+    margin-left: 15px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fimg-sprite.png?alt=media&token=7a0e1192-7aa1-49cd-803b-6d4f0b49241e');
+    width: 20px;
+    height: 20px;
+    background-position: -13px -11px;
+}
+a{
+    color: white;
+    outline: none;
+}
+li{
+    color: white;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.active{
+    color: #ffc107;
+    background-color: black;
+}

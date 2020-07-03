@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src={{viewProduct?.image}} alt="">
+            <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Type:</th>
+                    <td>{{viewProduct?.type}}</td>
+                  </tr>
+                  <tr>
+                    <th>Width:</th>
+                    <td>{{viewProduct?.width}}</td>
+                  </tr>
+                  <tr>
+                    <th>Laminates:</th>
+                    <td>{{viewProduct?.laminates}}</td>
+                  </tr>
+                  <tr>
+                    <th>Ability Level:</th>
+                    <td>{{viewProduct?.level}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col-md-6">
+            <h3>{{viewProduct?.productName | uppercase}}</h3>
+            <p ><strong>Size: </strong>{{viewProduct?.size}}</p>
+            <div class="freeSpace60"></div>
+            <div>
+                <div class="orderDetailSection animationDelay-4">
+                    <div class="productCountWrapper">
+                        <span class="productCount lessProduct" (click)="lessOrder()"></span>
+                        <input class="product-qty-single" type="text" maxlength="3" value={{valueOrder}}>
+                        <span class="productCount moreProduct" (click)="moreOrder()"></span>
+                    </div>
+                    <div class="productPrice">
+                        <p>Total:</p>
+                        <span class="productDetailPrice">{{totalCount | currency}}</span>
+                    </div>
+                </div>
+                <div class="fadeInTop animationDelay-6">
+                    <button class="btn btn-warning">Order</button>
+                </div>
+            </div>
+            <p class="descript">{{viewProduct?.description}}</p>
+        </div>
+    </div>
+</div>

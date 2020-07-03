@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Snowboarding Events</h2>
+            <p class="textPreview">For all snowboard contests and events RadSeason.com is your one-stop shop. Thanks to our exhaustively researched calendar and schedule of events, whether you’re looking to take a trip to Los Angeles to check out the Air + Style Festival, or you want to find your way to one of the Freeride World Tour events, or maybe you have a hankering to go and ride in Vail, Colorado when the Burton US Open Snowboarding Championships comes to town.  For those that want to party after a long day on the slopes, there’s the Rise Festival and Snowtunes in Australia. Watch the best snowboarders in the world through it down at X Games Aspen. <br> <br> Whatever snowboard events you’re after, from the halfpipe, to the slopestyle, to the downhill, to the park, we is proud to provide you with all the info you need to hit the mountain in style.</p>
+            <div class="row">
+                <div class="col-sm-6" *ngFor="let event of events" [routerLink]="['/events/'+event.name, event.id]">
+                    <div class="hoverImg"><img src={{event.image}}></div>
+                    <div class="infoBox">
+                        <h5>{{event.name | titlecase}}</h5>
+                        <p>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-marker-24.png?alt=media&token=e7580290-0ebd-4f78-91cd-e0f77997f135">
+                            <span>{{event.location}}</span>
+                        </p>
+                        <p class="location">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-calendar-24.png?alt=media&token=2cf42a6b-4993-4f23-94b9-448a8314e26a">
+                            <span>{{event.date}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Top 3 action sports, adventure events and festivals in 2021</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FBillabong-Pipe-Masters-Kelly-Slater-bottom-turn--270x190.jpg?alt=media&token=59bb1a79-4585-4e81-b271-9f2ab7ccf732" >
+                </div>
+                <div class="col-sm-7">
+                    <span class="number">1</span>
+                    <span class="text">Billabong Pipe Masters</span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FOktoberfest-Germany-1-270x190.jpg?alt=media&token=40272e95-f2ac-4c34-aeb7-59f22c6f084e" >
+                </div>
+                <div class="col-sm-7">
+                    <span class="number">2</span>
+                    <span class="text">Octoberfest 2021</span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FDressed-up-270x190.jpg?alt=media&token=2d34cfd3-967f-4a63-aab5-e1b8d0299545" >
+                </div>
+                <div class="col-sm-7">
+                    <span class="number">3</span>
+                    <span class="text">Notting Hill Carnival</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

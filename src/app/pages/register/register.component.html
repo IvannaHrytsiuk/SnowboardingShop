@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <h3>PERSONAL INFORMATION</h3>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>First name:</label>
+                    <input name="firstName" [(ngModel)]="firstName" #fName = "ngModel" pattern = "[a-zA-Z]{2,}" type="text" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "fName.valid || fName.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label>Last name:</label>
+                    <input name="lastName" [(ngModel)]="lastName" #lName = "ngModel" pattern = "[a-zA-Z]{2,}" type="text" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "lName.valid || lName.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label>Email address: </label>
+                    <input name="email" [(ngModel)]="email" type="email" #eAddress = "ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "eAddress.valid || eAddress.untouched">Please provide a valid value.</div>
+                </div>
+                <div class="col-md-6">
+                    <label> Password: </label>
+                    <input name="password" [(ngModel)]="password" #pass = "ngModel" pattern = "[a-zA-Z0-9]{5,10}" type="password" class="form-control" required>
+                    <div class="invalid-feedback" [hidden] = "pass.valid || pass.untouched">Please provide a valid value.</div>
+                </div>
+            </div>
+            <a [routerLink]="[ '/customer']"><button [disabled] = "fName.invalid || lName.invalid || eAddress.invalid || pass.invalid" class="btn btn-warning" (click)="addNewUser()">Create account</button></a>
+          </form>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+.container{
+    padding-top: 30px;
+}
+.eventBox{
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+.eventBox:hover{
+    border:1px solid #555;
+}
+.eventBox h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.eventBox p{
+    text-align: center;
+}
+.buttonBlock{
+    text-align: right;
+}
+.buttonBlock button{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.buttonBlock button:hover{
+    background-color: #555;
+}
+input{
+    margin-bottom: 20px;
+}
+textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+.btnGroup{
+    text-align: end;
+}
+button{
+    padding: 10px 20px;
+    margin-right:10px;
+}
+.col-md-6{
+    flex: 0 0 46%;
+    max-width: 46%;
+}
+.imageBlock{
+    width: 100%;
+}
+.imageBlock img{
+    width: 100%;
+}
+.titleName{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.generalInform h5{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.allInform{
+    margin: 1em;
+}
+.col-md-3{
+    height: 200px;
+    background-size: cover;
+    margin: 0 10px;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.row{
+    margin: 1em;
+}

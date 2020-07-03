@@ -1,0 +1,46 @@
+.headerExper{
+    background-color: #ffc107;
+    height: 250px;
+}
+.headerExperTxt{
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.headerExperTxt h3{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px
+}
+.headerExperTxt p{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+.container{
+    padding-top: 50px;
+}
+.col-md-6 img{
+    width: 100%;
+}
+.col-md-6 {
+    padding: 0;
+}
+.col-md-6 p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.col-md-6 h2{
+    line-height: 1.6;
+    margin-top: 55px;
+}
+.textBlock{
+    padding-right: 30px;
+}
+p a{
+    text-decoration: none;
+    color: #dc3545;
+}

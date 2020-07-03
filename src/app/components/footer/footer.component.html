@@ -1,0 +1,101 @@
+<footer [ngClass]="statusClass" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><h4>PRODUCTS</h4></a>
+                    <a class="nav-link" href="#">Mens</a>
+                    <a class="nav-link" href="#">Womens</a>
+                    <a class="nav-link" href="#">Sale</a>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><h4>ABOUT</h4></a>
+                    <a class="nav-link" href="#">Careers and internships</a>
+                    <a class="nav-link" href="#">Sponserships</a>
+                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" href="#">Catalog Request/Download</a>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><h4>CUSTOMER SUPPORT</h4></a>
+                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#">Shipping and Order Tracking</a>
+                    <a class="nav-link" href="#">Easy Returns</a>
+                    <a class="nav-link" href="#">Warranty</a>
+                    <a class="nav-link" href="#">Replacement Binding Parts</a>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><h4>NEWSLETTER</h4></a>
+                    <div id="footerEmail">
+                        <form>
+                            <input type="text" placeholder="Enter your email">
+                            <input type="submit" value="Go">
+                        </form>
+                    </div>
+                    <ul class="nav social">
+                        <li> 
+                            <a class="nav-link facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="nav-link twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="nav-link instagram" href=""></a>
+                        </li>
+                        <li>
+                            <a class="nav-link pinterest" href=""></a>
+                        </li>
+                        <li>
+                            <a class="nav-link youtube" href=""></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-6">
+                <p>© 2014 Template by<a id="footerWebLink" href="">w3layouts</a></p>
+            </div>
+            <div class="col-md-6" style="text-align: right;">
+                <div class="btn-group drop" dropdown>
+                    <button id="button-basic" dropdownToggle (click)="setActiveClass()" type="button" class=" dropdown-toggle"aria-controls="dropdown-basic">
+                      Change region 
+                      <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+                      <li role="menuitem">
+                          <a class="dropdown-item" href="#">Austaria 
+                              <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fas.png?alt=media&token=2436eb21-b6c5-467c-8828-5ef694128dc5" alt="">
+                            </a>
+                        </li>
+                      <li role="menuitem">
+                          <a class="dropdown-item" href="#">Sri Lanka 
+                              <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fsrl.png?alt=media&token=fd27a85a-c1d3-4d17-8aec-2156693cc11e" alt="">
+                            </a>
+                        </li>
+                      <li role="menuitem">
+                          <a class="dropdown-item" href="#">New Zealand 
+                              <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fnz.png?alt=media&token=15067c19-46cc-4230-afe0-ee3b1d9ed449" alt="">
+                            </a></li>
+                      <li role="menuitem">
+                          <a class="dropdown-item" href="#">Pakistan 
+                              <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fpk.png?alt=media&token=4cf26999-84f1-41fc-8e4a-985d6c5078e5" alt="">
+                            </a>
+                      <li role="menuitem">
+                          <a class="dropdown-item" href="#">United Kingdom 
+                              <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fuk.png?alt=media&token=cb9efc95-57d7-4250-8500-a24961778be5" alt="">
+                            </a>
+                      <li role="menuitem">
+                          <a class="dropdown-item" href="#">United States 
+                              <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fus.png?alt=media&token=bf95f142-4079-4590-8599-08440af32350" alt="">
+                            </a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,366 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ivanna",
+      "lastName": "Hrytsiuk",
+      "email": "admin@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "firstName": 1,
+      "lastName": "Oleh",
+      "email": "Fetisov",
+      "password": "olg@gmail.com",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 3,
+      "categoriesId": "3",
+      "productName": "Lib Tech T. Rice Pro HP Snowboard 2020",
+      "type": "Park, Powder, Freeride, Freestyle, All Mountain",
+      "description": "The 2020 Lib Tech T.Rice Pro HP men's snowboard is an all-around great board for whatever style riding you like, even powder riding. This Lib Tech snowboard has a directional twin shape with a hybrid camber, which is camber underneath the bindings that gives the board a pressured carving area between your feet while still keeping the pop you love in the tip and tail. Flexing at medium to stiff, this board is great for cruising the groomers, navigating the powder and sending it off the jumps. Magne-Traction® edges provide an effortless edge hold in any condition. The base of the T.Rice Pro HP features sintered technology that gives the board a super fast finish when waxed that will have you cruising at higher speeds. No matter your riding ability, rip the 2020 Lib Tech T.Rice Pro HP men's snowboard all over the mountain this winter so you can see why it's Travis Rice's favorite.",
+      "size": "155 cm.",
+      "width": "Regular",
+      "laminates": "Biaxial Fiberglass, and Triaxial with Basalt",
+      "level": "Advanced, Intermediate",
+      "price": 294,
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F5.jpg?alt=media&token=685476e0-888d-46e2-b8ca-ba733427fcdd",
+      "sale": 419.95
+    },
+    {
+      "id": 4,
+      "categoriesId": "3",
+      "productName": "Chamonix Dolent Snowboard 2020",
+      "type": "Freeride, Freestyle, All Mountain",
+      "description": "The Dolent provides all-mountain freedom to the rider geared toward slaying the opportunities provided by their local resort. Whether it's linking turns, spraying skiers or ducking fences, the Dolent explodes onto the scene to deliver the all-mountain performance you've been searching for. A directional twin profile sets back the riders stance to give them an easier ride through deep snow zones and sets the board in a cruise control like experience while riding hardpack and groomed runs. The true camber profile provides unmatched energy, edge hold and ollie power. The Dolent is a force to be reckoned with which is sure to leave a lasting impression on any rider.",
+      "size": "147 cm.",
+      "width": "Regular",
+      "laminates": "Fiberglass, w/ Carbon Stringers",
+      "level": "Advanced, Intermediate",
+      "price": 275,
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F3.jpg?alt=media&token=2e00231b-5289-4538-ae6a-2e40f9abbfa6"
+    },
+    {
+      "id": 5,
+      "categoriesId": "2",
+      "productName": "Evol Flag Snowboard 2020",
+      "type": "Park, Freestyle, All Mountain",
+      "description": "You're a grand old board, you're a high flying board and forever in snow you slay. With every wax your base slides true, and under my feet is the red,white and blue. The Evol flag has eleven stripes and no stars meaning it represents absolutely nothing but a good looking graphic.",
+      "size": "156cm.",
+      "width": "Regular",
+      "laminates": "Biaxial Fiberglass",
+      "level": "Entry Level, Intermediate",
+      "price": 320,
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F4.jpg?alt=media&token=c0e49379-bc6d-434c-8505-fe864390a526"
+    },
+    {
+      "id": 6,
+      "categoriesId": "1",
+      "productName": "Lib Tech Dynamo Snowboard 2020",
+      "type": "Powder, Freeride, Freestyle, All Mountain",
+      "description": "Get wild on the slopes loving every second riding the 2020 Lib Tech Dynamo Snowboard for men. The Dynamo features a directional nose that provides you with a great float over the the corduroy runs and in the pow. This Lib Tech snowboard features Banana Technology with a C3 profile that provides each rider with effortless control with a mild rocker between the feet, camber underfoot and rocker in the tip and tail. This profile creates aggressive control that is both powerful and precise. Magne-Traction® technology gives you unimaginable, effortless edge hold. This snowboard also features Original Power Construction that is lightweight and strong. Ideal for all-mountain riding, this medium to firm flexing board is great for intermediate to advanced riders. Enjoy your days on the slopes this winter riding the 2020 Lib Tech Dynamo Snowboard for men.",
+      "size": "170 cm.",
+      "width": "Regular",
+      "laminates": "Biaxial Fiberglass, and Triaxial",
+      "level": "Advanced, Intermediate",
+      "price": 479,
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F6.jpg?alt=media&token=7dfa9060-5ba3-4e0a-aec2-86621706d2e9",
+      "sale": null
+    },
+    {
+      "id": 7,
+      "categoriesId": "1",
+      "productName": "Lib Tech Jamie Lynn Tittyfish Blem Snowboard",
+      "type": "Powder, Freeride, All Mountain",
+      "description": "amie Lynn is in constant motion, progressing as a human pushing his skateboarding, art and snowboarding to new levels. The all new Titty Fish is his latest LIB creation built for his aggressive powerful riding style in all terrain and especially pow. A powerful flex, aggressive camber contour, stable open speed friendly sidecut. A unique floaty nose shape that planes on edge in pow and tapered shape that settles nicely in soft snow for big landings & straight line run-outs. Point the Titty where you want to go & blast.",
+      "size": "168 cm.",
+      "width": "Regular",
+      "laminates": "Biaxial Fiberglass, and Triaxial",
+      "level": "Advanced, Intermediate",
+      "price": 534,
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F7.jpg?alt=media&token=babdf5df-dc4a-4973-b4a4-547018d8208d",
+      "sale": null
+    },
+    {
+      "id": 8,
+      "categoriesId": "2",
+      "productName": "Salomon Sight Wide Snowboard 2020",
+      "type": "Freeride, Freestyle, All Mountain",
+      "description": "The Sight features a Cross Profile; Rocker and camber blend a perfect balance of edge control and forgiveness. The Aspen Strong Core brings this board above average with extra snap off jumps and heightened responsiveness while carving.",
+      "size": "158 cm.",
+      "width": "Wide",
+      "laminates": "Biaxial Fiberglass, w/ Carbon Stringers",
+      "level": "Entry Level, Intermediate",
+      "price": 349,
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F8.jpg?alt=media&token=c275e564-c3cd-4e70-a3a5-2b18770fb4e8",
+      "sale": null
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoriesName": "Men's",
+      "check": "false"
+    },
+    {
+      "id": 2,
+      "categoriesName": "Women's",
+      "check": "false"
+    },
+    {
+      "id": 3,
+      "categoriesName": "Kid's"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Morgan Freeman",
+      "description": "He worked and trained with ESF Courchevel 1850 and went on to complete the BASI Level 4 International Ski Teaching Diploma at 23 enabling him to gain his full French equivalence. Not content with holding the highest level of instructor qualification on skis he went on to do the same on a snowboard and is one of a very small number of instructors to do so. After a many years of playing in the snow Morgan decided to get a 'proper job' and joined the Army, commissioning from the Royal Military Academy Sandhurst. He never really left the mountains however and was able to race, coach and instruct for the Army as well as the occasional busman's holiday back to the Three Valleys to teach with the Snowlimits team. Having decided that life in the mountains, and sliding around with people like you is more fun than a 'proper job', Morgan is now back in the mountains full time heading up our snowboard school bringing his vast technical knowledge and ability to teach all ages and any level to help you get the most from your time on snow, whether you are on 1 plank or 2!",
+      "fact": "Morgan started skiing at 4!",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FAndy.jpg?alt=media&token=f1d4a256-7657-4ff0-a35a-9fd0fe13243a"
+    },
+    {
+      "id": 2,
+      "name": "Tom Hanks",
+      "description": "Tom started his skiing career racing on the dry slopes throughout the South of England.\n\nHe has been coming to Courchevel since 1993, and has been qualified to instruct for 20 of those years. Knowing where to find the best conditions is, as you would expect, second nature to him. Tom returned to the UK to work in the construction industry for some years, however, his passion for skiing and love of the mountains explains why he returned with his young family to France in order to live there all year round.\n\nAny spare time during the summer months is spent working on his house, family time or trying to get out on his bike. But during the winter months you can find him taking his 3yr old up for a ski!",
+      "fact": "Tom taught Huw to ski (he likes to point out he was only 20 at the time, whilst Huw was 5!)",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Frobert.jpg?alt=media&token=bdfd3664-64d5-4b05-b82c-f6c762e7439a"
+    },
+    {
+      "id": 3,
+      "name": "Harrison Ford",
+      "description": "Harrison is a passionate, talented and energetic ski instructor. He has the ability to make all those around him at ease and lessons are always fun.\nHe has worked across the alps and excels teaching all levels from 4 years olds taking their first hesitant steps on snow right up to aspirant instructors and young athletes. He has spent a large part of his career working in the Three Valleys and holds a lot of unique local knowledge which allows him to find those quiet areas that few know especially off-piste.\nHarrison started skiing as a toddler in the highlands of Scotland, he spent several years racing and then moved into freestyle representing the national team. His love affair with teaching started during his mid-teens when he started instructing on a local dry slope, quickly realising that skiing was the way forward he did his first season teaching at the tender age of 19 in the French system.\nHe lives in the Three Valleys during the winter months with his family. When the snow melts he can be found on oil rigs across the globe or praying for waves on a beach.",
+      "fact": "He can eat own weight in Haribo",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Frobin-1.jpg?alt=media&token=fc989cd0-64b5-464b-840a-1dfddccb7351"
+    },
+    {
+      "id": 4,
+      "name": "Steaven Sean",
+      "description": "Steaven was born in Cardiff, Wales & emigrated to Nelson, NZ in 2004 & became a NZ citizen in July 2008. After completing high school at Nelson College in 2011, Steaven went to Courchevel & completed the BASI 1 & 2 qualifications as well as the French Test Technique Slalom Race.  From there, he carried on progressing through the BASI system whilst teaching & training, completing his final module at BASI level 4, receiving the ISIA stamp, the Euro Mountain Security, UKCP 2 Alpine Race Coach & Eurotest.\n\nSteaven is an incredible talent, he currently heads up our race department coaching aspiring instructors. He is an excellent ski instructor who knows the Three Valleys off by heart. Steaven loves skiing the whole mountain and can be found deep off-piste in the morning or in the park in the afternoon. ",
+      "fact": "Steaven is just all round amazing really!",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ftom.jpg?alt=media&token=28db4a5a-ca67-4062-b369-b6cca15951c3"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "TOMORROWLAND WINTER 2021",
+      "date": "20 Mar -  27 Mar, 2021",
+      "type": [
+        "Music",
+        " Skiing",
+        " Snowboadring"
+      ],
+      "video": "https://www.youtube.com/embed/Q0nhJ3_fpIc",
+      "location": "Alpe d’Huez, France",
+      "locationLat": 45.0918,
+      "locationLng": 6.0623,
+      "slogan": "The ultimate party on the piste",
+      "description": "You may have heard of the infamous Tomorrowland festival located in Belgium, but the creative storyline of this world-loving, major brand, is about to travel to the frosty mountains. That’s right, the upcoming Tomorrowland chapter of “The Hymn Of The Frozen Lotus” transports the festival to all new territory. <br><br> 2021 is the year to witness what could potentially be the most creative and magical scene yet, set in the mesmerizing French Alps. For an event as large and as popular as Tomorrowland, you know from the word “winter” that this is going to be one crazy ride.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fetommorowlend.jpg?alt=media&token=55d53f5e-d770-4710-98c2-d437d78f26bc",
+      "wear": "The weather in France is cold at this time of the year. Wear comfortable shoes for walking through the snow and crowds. Put on layers as it can get hot at the indoor venues. Fancy dress is not mandatory but you’ll have more fun wearing it.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "Tickets are purchased as a package that includes a 4- or 7-night stay with accommodation, festival access, and a lift pass for the duration included in the price. ",
+      "toDo": "The ski resort of Alpe d’Huez is fantastic for beginners and advanced skiers/boarders. There are over 80 lifts on the mountain with over 110 runs from green runs (beginner slopes) to black runs (advanced slopes).<br><br>At the top of the mountain, you can find two snowparks along with a halfpipe and a boardercross park. The skiing area covers 10,000 hectares of mountain space and has an altitude of up to 3330m.<br><br>Depending on the time in which you visit Alpe d’Huez there are regular ski races, comedy festivals, and motor racing on ice events as well as the opportunity for off-piste skiing/boarding and paragliding.<br><br>Aside from enjoying the powder on the mountain, you can also expect a great nightlife scene. The French Alps favorite, La Folie Douce is always jumping offering a range of music and entertainment. <br><br>Through the town, the bars show all types of live sports and provide drink promotions and live music. If you still have enough energy after all of that you could test your skills on the town’s ice rink or head straight to the clubs and party till dawn.",
+      "get": "Alpe d’Huez is situated in the western French Alps. Chambery Airport and Grenoble Airport are around 120km away from Alpe d’Huez. Airport transfers can cost hundreds of euros, however, Tomorrowland Winter are arranging a festival bus.",
+      "site": "https://www.tomorrowland.com/en/winter/welcome-2",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fwinter-stage-1536x1024.jpg?alt=media&token=5fe999e0-7dbf-4d2e-9013-b47b50a7ba64",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ffancy-dress-1536x1024.jpg?alt=media&token=702c51b0-5e2d-4462-a17e-ef7f33d19327",
+      "image3": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FAlpe-dHuez-1536x1024.jpg?alt=media&token=9f24801a-9c2f-4656-8eed-967f88890ec6"
+    },
+    {
+      "id": 2,
+      "name": "ELECTRIC MOUNTAIN FESTIVAL",
+      "date": "04 Apr - 05 Apr, 2021",
+      "type": [
+        "Music",
+        " Skiing",
+        " Snowboarding"
+      ],
+      "video": "https://www.youtube.com/embed/XSFCLWzo7ZI",
+      "location": "Sölden, Austria",
+      "locationLat": 46.9621,
+      "locationLng": 11.0074,
+      "slogan": "EDM Party in The Austrian Alps",
+      "description": "Want to have incomparable party fun at a truly irreplaceable site? The Electric Mountain Festival – as the name suggests – is the event you need to attend! The world-class DJs are sure to enrapture the electronic music lovers in the middle of the Hot Spot in the Austrian Alps.<br><br>The festival brings the coolest Electric Dance Music Scene artists to the alpine valley – Ötztal – who will turn the valley into an ultimate DJ resort in the Alps. The music party euphoria will be further heightened with an added fun of skiing at the heart of the Ötztal Mountain World.<br><br>Holding a Sölden day ski pass makes you entitled to attend the concert without worrying about purchasing an additional pass for the concert – a place to witness top-class DJs in awe as they enchant you with some of the best electronic music to play.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FeElectric-Mountain-Festival.jpg?alt=media&token=d9581987-712e-4d2d-a2de-9d747e41c59c",
+      "wear": "The weather in Austria is cold at this time of the year. Wear comfortable shoes for walking through the snow and crowds. Put on layers as it can get hot at the indoor venues. Fancy dress is not mandatory but you’ll have more fun wearing it.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "Tickets are purchased as a package that includes a 4- or 7-night stay with accommodation, festival access, and a lift pass for the duration included in the price.",
+      "toDo": "Sölden is known for its beautiful sights, hiking and skiing fun, nightlife and great food. If you are a biker, you may enjoy the mountain biking in the area. It is of the best destinations in the Alps for winter sports.<br><br>From the valley itself, the newly opened Giggijochbahn and the Gaislachkoglbahn – the world’s most advanced cable cars – give snowboarders and skiers direct access to a wide range of pistes catering for all abilities.<br><br>There are a variety of bars, huts and restaurants as well as a range of après-ski. Sölden is fairly a small village, hence, most visitors are most likely to have a short walk from their place of stay to the lifts. Tobogganing is also among various other outdoor activities to enjoy in Sölden.",
+      "get": "Sölden is located in the West of Austria, in the province of TIROL to be more exact. It snuggles amid the ÖTZTAL Valley.<br><br>If you are an EU citizen, you do not need a visa to visit Austria as part of its Schengen agreement. You can get to this village by car, train or plane.<br><br>To cut down your travel time, search for direct flights to Innsbruck airport. From there you can reach the Ötztal by train as well. All local trains stop in Ötztal Bahnhof at the ingress to the valley. A public bus line or taxi can be taken from there.",
+      "site": "https://www.soelden.com/winter/events/event-calendar.html?viewType=detail&itemId=1057",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F30443225_1831138480271266_3430025100936609792_n.jpg?alt=media&token=f070f6c3-cd56-40bb-aba8-79944e740bab"
+    },
+    {
+      "id": 3,
+      "name": "2022 WINTER OLYMPICS",
+      "date": "04 Feb - 20 Feb, 2022",
+      "type": [
+        "Outdoors",
+        " Skiing",
+        " Snowboarding"
+      ],
+      "video": "https://www.youtube.com/embed/2Zj3bb0Cv70",
+      "location": "Beijing, China",
+      "locationLat":39.9267,
+      "locationLng": 116.3560,
+      "slogan": "92 Nations – One Goal, One Motto, One Place",
+      "description": "The 2022 Winter Olympics, also known as XXIV Olympic Winter Games will be the 24th winter multi-sports event by IOC.<br><br>On July 31st, 2015 the 128th IOC session took place where Beijing was elected as the host city for winter games 2022. For the first time, China is going to host the Winter Olympics.<br><br>However, back in 2008 Beijing was the host city for the Summer Olympics and in 2022, Beijing will become the first city to host both summer and Winter Olympics. It will be consecutive fourth time that the Olympics are going to be held in East Asia.<br><br>Along with the new venues they are also planning to persist with some of the same venues used in 2008, whereas the Beijing National stadium will also be staged for the opening and closing ceremonies.<br><br>A few of the events will likely happen outside of the city, depending on the nature of the sports.<br><br>Bobsleigh, alpine skiing, and luge is going to be contested in Yanqing (Xiahaituo Mountain area) it’s just 56 miles northwest from the main Beijing city center.<br><br>What makes this particular venue fascinating is one fact: it doesn’t snow there!",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fe2022-Winter-Olympics.jpg?alt=media&token=77686bc8-9479-4d9b-83f1-9767e263a963",
+      "wear": "The weather in China is cold at this time of the year. Wear comfortable shoes for walking through the snow and crowds. Put on layers as it can get hot at the indoor venues. Fancy dress is not mandatory but you’ll have more fun wearing it.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "Tickets are purchased as a package that includes a 4- or 7-night stay with accommodation, festival access, and a lift pass for the duration included in the price.",
+      "toDo": "Welcome to Beijing, the capital of the most populated country and one of the most culturally rich, traditional cities in the world. Although you’re here for the Olympics, there is a world to explore beyond that as well.<br><br>From historical landmarks to traditional foods and best nightlife, the city has everything for everyone.<br><br>Visit 798 Art District to fall in love with the Chinese contemporary art. You can also find the commercial galleries and some of the finest Chinese cafes in the premises.<br><br>Confucius Temple is a must visit place in Beijing. It was built in 1302 to pay tribute to the greatest sage of China and his never-ending legacy.<br><br>Experience the taste of delicious dumplings and soups of China. You can easily find their local delicacies around every corner, whether you go to street stalls or fancy restaurants. The delicious dumplings are served steamed or boiled, stuffed with pork and cabbage or chives along with the black vinegar to dip.",
+      "get": "There are many ways to get around Beijing, it totally depends on your preference. Beijing sports a very strong public transport system along with buses, trains and subways.<br><br>To travel more efficiently in Beijing, it is highly recommended to buy a rechargeable IC card named as Yikatong 一卡通. It can be used for both buses and subway, and it can easily be available at subway stations.<br><br>Subways are fast and up to the standard (signage in both English and Chinese).<br><br>Although they are usually crowded but obviously the fastest way to commute from one place to another.<br><br>Here’s a good news: taxis are bit cheaper in Beijing but sometimes it’s hard to find them because of the traffic jams. For your ease, you can search online about the local taxi companies and contact them to book your taxi ride.",
+      "site": "https://www.olympic.org/",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F4-02-2018-Snowboard-Ladies-Parallel-Giant-Slalom-04.jpg?alt=media&token=50158d0b-f867-4f09-871a-ad53bc7c92d2"
+    },
+    {
+      "id": 4,
+      "name": "SNOWBOMBING 2021",
+      "date": "13 Apr - 18 Apr, 2021",
+      "type": [
+        "Music",
+        " Skiing",
+        " Snowboarding",
+        " Virtual"
+      ],
+      "video": "https://www.youtube.com/embed/tJptg7QUtIc",
+      "location": " Mayrhofen, Austria",
+      "locationLat":47.1631,
+      "locationLng": 11.8595,
+      "slogan": "An Explosive Thrill of Arctic Proportions ",
+      "description": "Five days, 100 performances, 650km of piste and one hell of a snow party experience. The Snowbombing festival is one of the best mountain festivals worldwide and takes place in west Austria’s town of Mayrhofen. It’s definitely something you are not going to want to miss.<br><br>The glorious mountain scape has it all. From blue runs to red runs and the Harikiri, Europe’s steepest incline, SB provides perfect terrains for beginners to snow-shredding experts. The ‘hof hosts daily lessons from numerous qualified instructors to take your ski and boarding skills to the next level.<br><br>Take a crack at the Penken and Ahorn slopes as well as the Vans Penken Park for backcountry skiing, epic carving and freestyle tricks. After some adrenaline-filled runs, head over to one of the five mountain venues for massive dance parties on the piste.<br><br>Can’t get enough of the music? Headline venues offer world-class DJs spinning enchanting tracks in arctic forests, Austria’s streets and underground arenas. There is no shortage of live music or epic stages.<br><br>Hitting the slopes by day and partying all night can take a toll on even the hardest ragers. That’s why the Snowbombing festival offers several ways for attendees to relax and unwind.<br><br>Decompress in top-tier spas or rooftop hot tubs. Stretch out your sore muscles in alpine yoga sessions amidst nature’s purest forests. Don’t forget to pig out or fine dine at the dozens of restaurants that the ‘hof has to offer!",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FeEpic-party-1.jpg?alt=media&token=8108cbc8-4e7a-42d2-890a-5002cca3f6d2",
+      "wear": "Make sure to dress appropriately as the weather in Austria is cold at this time of the year. Dress as if you were going out to party with ski clothes on top! Wear comfortable shoes for walking through the snow and crowds.<br><br>Not all the events are taking place outside. Put on layers that you can take off when it gets hot and sticky at night. ",
+      "pack": "<strong>Sunglasses and sunscreen:</strong> Bring goggles or sunglasses to protect your eyes from the sun which is pretty strong in the mountains. You get burned easier and quicker in the mountains than you think, so don’t forget to put on high factor sunscreen.<br><br><strong>Fancy dress:</strong> It is optional, but strongly encouraged.<br><br><strong>Swim shorts:</strong> You don’t want to miss out on the Snowbombing pool party or soaking in the hotel pools.<br><br><strong>Winter Festival Survival Toolkit:</strong> a few added extras to fulfill the mountain party potential.",
+      "ticket": "Tickets include an accommodation and festival wristband. You can choose anything from budget to luxury stays. Upgrades to ticket packaging include ski passes, VIP options, equipment rentals and more. Just head to Snowbombing’s website to get your ticket.",
+      "toDo": "Whether you’re looking to shred the slopes, rage to head-banging music or relax with a cold one, the Snowbombing festival offers a variety of activities for everyone. Plan ahead and be a part of one of the world’s raddest snow events.<br><br>You may wake up from the night before with renewed confidence in your skiing ability and try to tackle Harakiri, Austria’s steepest piste. If you’re a novice/intermediate don’t even think about it. The number of people sliding down that slope arse over face is comical. Not worth sacrificing the headline event at the end of the week!<br><br>Try and ski the glacier if you can. It’s magical!<br><br>Aside from the glacial experience, Mayrhofen offers tons of adventures for all-types of thrill seekers:<br>Be apart of a two-day SB road trip across four countries<br>Find your lover in chairlift speed dating<br>Compete in the wacky and entertaining Snowlympics<br>Paraglide over breathtaking views of the Austrian alps",
+      "get": "<strong>By Car</strong><br>Part of the Snowbombing experience is to drive from home to Mayrhofen where you eventually reach the valleys of Austria dwarfed by snow capped mountains and lush greenery. Winding down the window you take in a breath of fresh mountain air that revives you after seemingly endless motorways. The stunning beauty of Mayrhofen’s landscape and the timeless architecture of its hotels and guesthouses makes this festival distinct from anything you’ve experienced.<br><br>As you drive into the town itself you are greeted with huge banners, signs for festival venues and bunting wrapped across the small windy streets of this intimate venue. People dressed in ski gear mingle with those in costume as well as the locals who seem unfazed by the ludicrousness of this annual event that transforms Mayrhofen-Hippach for a whole week.<br><br><strong>By Plane</strong><br>The closest airport to Mayrhofen is Innsbruck (INN). From there you can take the public bus (route F) to Innsbruck Hauptbahnhof (central bus & train station). At the central station you can jump on a train to Jenbach where you can change for the Zillertalbahn, a train that goes through the beautiful Zillertal to Mayrhofen.<br><br>Alternatively you can get a direct shuttle from the airport that usually drops you off at your accommodation. ",
+      "site": "https://snowbombing.com/",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FMountain-venue.jpg?alt=media&token=30bb71bb-97a9-47be-92c8-89169de3aaac",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FDJs-on-fire-1.jpg?alt=media&token=f4e08f46-73c0-4384-a91e-d8db9f77d95a",
+      "image3": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FOur-favourite-run-67-a-long-winding-slope-with-beautiful-views-over-Mayrhofen-1.jpg?alt=media&token=ddb747b0-6b73-45d7-a016-ad9093af529a"
+    },
+    {
+      "id": 5,
+      "name": "RED BULL JUMP AND FREEZE",
+      "date": "06 Feb - 06 Feb, 2021",
+      "type": [
+        "Skiing",
+        " Snowboarding"
+      ],
+      "video": "https://www.youtube.com/embed/0_jmw1PEYkA",
+      "location": " Liepkalnis, Vilnius, Lithuania",
+      "locationLat":54.6555,
+      "locationLng": 25.3065,
+      "slogan": "Red Bull Jump and Freeze is back in Lithuania",
+      "description": "Embodied in hand cut, to read craziest winter event profile. Red Bull Jump & Freeze Lithuania “is a strange phenomenon in which people by home-made vehicles Skates of Hill and flies into the outdoor pool – in the middle of winter!<br><br>Viewers EXTRAORDINARY images fiesta of cost, and the list of participants is already full, even overflowing, so if you make your own and have not had time to register to take part in this year will have to settle for part of the audience.<br><br>The event will have held Radistai, the music will start Mamania, and your jumps assess Airinė Palšytė, Arunas Gibiežos and other more or less well-known actors. Specifically, they will evaluate not only shocks, but also what the Friends constructed participants.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FeRed-Bull-Jump-and-Freeze-Lithuania.jpg?alt=media&token=0b39447c-22bd-41bd-8c98-200112f8f6d1",
+      "wear": "The weather in Lithuania is cold at this time of the year. Wear comfortable shoes for walking through the snow and crowds. Put on layers as it can get hot at the indoor venues. Fancy dress is not mandatory but you’ll have more fun wearing it.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "Tickets are purchased as a package that includes a 4- or 7-night stay with accommodation, festival access, and a lift pass for the duration included in the price.",
+      "toDo": " Even the best-laid plans can head south. battleface can help you stay safe in dangerous or hostile situations as well as that epic road trip or catching a few waves. How to stay safe during Red Bull Jump and Freeze Lithuania? If you’re not covered for your trip yet, get your quote here.",
+      "get": "Book your perfect trip with our Lithuania travel guide and destination information. Does Lithuania require a visa? Check the visa requirements before you get caught up during your travel.",
+      "site": "www.redbull.com",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FFestival03%E2%80%94%E2%80%94-1.jpg?alt=media&token=293cdfd9-7eed-449f-8695-d2b118a75a67"
+    },
+    {
+      "id": 6,
+      "name": "SNOWATTACK FESTIVAL 2021",
+      "date": "30 Jan - 06 Feb, 2021",
+      "type": [
+        "Music",
+        " Skiing",
+        " Snowboarding"
+      ],
+      "video": "https://www.youtube.com/embed/WnnJ7ct1MfA",
+      "location": "Les Orres, France",
+      "locationLat":44.4910,
+      "locationLng": 6.5536,
+      "slogan": "Throw some snowballs",
+      "description": "Are you a fan of winter sports and festivals? Snowattack is the place for you and your gang.<br><br>It goes down in Les Orres located in the French Southern Alps. For the fourth time now, it will house the Snowattack festival.<br><br>With panoramic views over Serre-Poncon lake and a wonderful landscape of alpine pastures and forests of larch together with the Swiss pine, your holiday will surely get heated up. The event has sports, fun and chill programs during the day and you just can’t get enough.<br><br>To stir up the fun, there are hütte parties, carnival and adventure activities in the afternoon. An event is not considered complete without a concert and this is no exception.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FeSnowattack.jpg?alt=media&token=4fe711ff-91d6-4699-956d-20e861d6665c",
+      "wear": "Make sure to dress appropriately as the weather in France is cold at this time of the year. Dress as if you were going out to party with ski clothes on top! Wear comfortable shoes for walking through the snow and crowds. Not all the events are taking place outside. Put on layers that you can take off when it gets hot and sticky at night.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "With special packages, the prices are just affordable and anyone should feel welcomed. The packages include; student, VIP, ski, BOIS mean accommodation, preclaux accommodation, and balcon accommodation.",
+      "toDo": "There are loads of things which you can occupy yourself with and have the moment of your life at your time in town for the festival. Visit some of the historical landmarks and sights such as; The Arles Amphitheatre, the Palais des Papes in Avignon and many more attractive landmarks.<br><br>You can also have a short trip and visit some of the beautiful cities nearby like Embrun and Briancon. Or you can fill your stomachs with some of the most delicious pizza’s prepared at the Pizza Bois mean. Just visit the site for some of the various things you can do while you’re around.",
+      "get": "You can get around to the Snowattack festival by various means of transport. When you travel by bus, you will find amazing prices for students and non-students.<br><br>Traveling in your own car is also another convenient option if you enjoy driving around.<br><br>Flying to the festival is the fastest means due to the fact that Festival Travel Ltd offers airport transfer to some destinations.",
+      "site": "https://snowattack.hu/en/",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fpowder.jpg?alt=media&token=5521d01e-374a-4c9d-bcce-8cd56629d2bd",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fblue-bird.jpg?alt=media&token=eddec3d0-5e55-47fc-bdf4-ae90dd79c882",
+      "image3": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fafterparty.jpg?alt=media&token=4a7627eb-b62a-441c-ba8d-bb04ea9fc6ac"
+    },
+    {
+      "id": 7,
+      "name": "RAVE ON SNOW 2020",
+      "date": "10 Dec - 13 Dec, 2020",
+      "type": [
+        "Music",
+        " Skiing",
+        " Snowboarding"
+      ],
+      "video": "https://www.youtube.com/embed/P0RMMKyRkJQ",
+      "location": "Saalbach, Austria",
+      "locationLat":47.3914,
+      "locationLng":12.6371,
+      "slogan": "is back in Saalbach for it’s 27th Anniversary",
+      "description": "Most people know what inexorably rolls here for a party-avalanche on them. Those who have never had the pleasure are hereby warned. Three days and nights, almost completely deprived of sleep, it is announced on 14 Floors: full throttle. No escape. As well as if all Ortens and anytime a grandiose DJ Set runs.<br><br>If one wants to go to bed when Andhim take the barn apart? If you sleep when Mathias Kaden rocking the summit. Better not! Chilling is later! And also you can in Saalbach at its best. We look forward to a rad 27th Rave On Snow 2020 gathering in Austria.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ferave-on-snow.jpg?alt=media&token=d136ad8a-0378-49f1-aea2-5da5efa5f742",
+      "wear": "Fancy dress is encouraged and guarantees more fun. Joking aside, wearing layers will keep you warm during the day and night.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "Tickets include an accommodation and festival wristband. You can choose anything from budget to luxury stays. Upgrades to ticket packaging include ski passes, VIP options, equipment rentals and more. Just head to Snowbombing’s website to get your ticket.",
+      "toDo": "Apart from skiing and snowboarding in the popular Alps, there also other things to do in the area.<br><br>1. Biking trails in Zwolferkogelbahn, Schattberg X-press and Bike Circus Saalbach are available.<br>2. Hike along the Baumzipfelweg and Reiterkogelbahn trails.<br>3. Visit the Der Talschluss wildlife areas.<br>4. Enjoy Schnitza’s Holzpark. You can go on a zipline adventure in the Hochseilpark. Take a horse-drawn carriage ride in the Saalbach Hinterglemm valley or enjoy the waters of the Teufelswasser (Devil’s Water).",
+      "get": "From Salzburg, you can jump on a train or bus going to Zell am See. From there, there are buses going to the Saalbach-Hinterglemm resort.",
+      "site": "https://raveonsnow.com/home.html",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FViews-of-Saalbach-1536x1024.jpg?alt=media&token=6c89567d-9e73-47b5-acbe-b38e4828cf20",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FFancy-1536x1024.jpg?alt=media&token=daa04ba1-5296-4174-9c56-574c443c4696",
+      "image3": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FSaalbach-1536x1024.jpg?alt=media&token=357ebd23-55eb-4fb1-b7b0-5517d4d69542"
+    },
+    {
+      "id": 8,
+      "name": "WINTER GAMES NZ 2020",
+      "date": "21 Aug - 05 Sep, 2020",
+      "type": [
+        "Skiing",
+        " Snowboarding"
+      ],
+      "video": "https://www.youtube.com/embed/AufYnFuxNcU",
+      "location": "Southern Alps, New Zealand",
+      "locationLat":-43.4974,
+      "locationLng":170.4927,
+      "slogan": "are back in the Southern Alps",
+      "description": "The best winter athletes in the world are heading to New Zealand’s Southern Alps once again for the seventh annual Winter Games NZ. Watch all the best compete in freestyle skiing, snowboarding, alpine skiing, cross-country skiing and curling then sit back and enjoy a full festival program across the region.<br><br>The Winter Games and the only one in the southern hemisphere and New Zealand’s largest winter sports event and one of the top 5 in the winter sports festivals in the world.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FeWinter-Games-NZ-1.jpg?alt=media&token=c8bf5e25-5dcb-4737-b2bc-c284c9d65029",
+      "wear": "he weather is cold at this time of the year. Wear comfortable shoes for walking through the snow and crowds. Put on layers as it can get hot at the indoor venues. Fancy dress is not mandatory but you’ll have more fun wearing it.",
+      "pack": "Take warm clothes, sunnies and a good camera to capture the action unfold in front of you.",
+      "ticket": "Book your perfect trip with our New Zealand travel guide and destination information. Does New Zealand require a visa? Check the visa requirements before you get caught up during your travel.",
+      "toDo": "The winter games takes place in the New Zealand town of Queenstown each year. The various disciplines take place at a variety of world class locations such as the Cardrona Alpine Resort, Snow Farm and Queenstown Ice Arena.",
+      "get": "The host towns Queenstown and Wanaka are both easily accessible. The nearest major airport is Queenstown Airport, located ten minutes from the Queenstown CBD and approximately 20 minutes to Coronet Peak and The Remarkables. Cardrona Alpine Resort is roughly an hour away. The easiest way to get around is by car.",
+      "site": "https://www.wintergamesnz.kiwi/",
+      "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FWinter-Games-NZ-Cardrona.jpg?alt=media&token=78b52950-d88f-4a7d-93df-5ab7cd54e22e"
+    }
+  ]
+}

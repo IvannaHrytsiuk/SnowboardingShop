@@ -1,0 +1,64 @@
+.headerTeam{
+    background-color: #ffc107;
+    height: 250px;
+}
+.headerTeamTxt{
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+.headerTeamTxt h3{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px
+}
+.headerTeamTxt p{
+    text-transform: uppercase;
+    text-align: center;
+}
+.col-md-3{
+    height: 235px;
+    padding: 15px;
+}
+img{
+    height: 200px;
+    width: 100%;
+}
+h5{
+    color: white;
+    position: absolute;
+    top: 80%;
+    font-weight: 700;
+    margin-left: 2%;
+    cursor: pointer;
+}
+h5:hover{
+    color:black
+}
+.averageBlock{
+    padding: 50px 0;
+}
+h3{
+    font-size: 23px;
+    font-weight: 700;
+}
+li{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    list-style-image: url('https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fmarker.png?alt=media&token=ec090cf4-0a48-46d3-9d3e-019da857c251');
+}
+ul{
+    padding-left: 15px;
+}
+.col-md-8 p{
+    text-align: justify;
+}
+.col-md-8 img{
+    height: 300px;
+}
+.teamBlock{
+    background-color: black;
+    color: white;
+}
