@@ -30,6 +30,13 @@
       "email": "Fetisov",
       "password": "olg@gmail.com",
       "id": 2
+    },
+    {
+      "id": 3,
+      "firstName": "hgfhgfhgfhgfhgfhgf",
+      "lastName": "grdfgdf",
+      "email": "fdgdgsfg@fgfd.gvh",
+      "password": "fdgdfgdfg"
     }
   ],
   "products": [
