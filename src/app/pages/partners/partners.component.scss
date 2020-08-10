@@ -1,0 +1,133 @@
+.main{
+    padding-top: 100px;
+}
+.header{
+    width: 100%;
+    background-color: #ffc107;
+    height: 230px;
+}
+.headerTxt{
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+.headerTxt h3{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px
+}
+.headerTxt p{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+.col-md-12{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.col-md-12 img{
+    width: 100%;
+}
+.col-md-6{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.col-md-6 h3{
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.col-md-6 p{
+    font-size: 14px;
+}
+.mainContent{
+    background-color: black;
+    color: white;
+}
+.content{
+    border-bottom: 0.5px solid white;
+    margin-bottom: 0px;
+    padding: 45px 0;
+}
+.col-md-5 div{
+    width: 250px;
+    height: 175px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.col-md-7{
+    text-align: center;
+    font-size: 15px;
+}
+.col-md-7 a{
+    width: 45%;
+}
+.col-md-5 img{
+    display: none;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:991px){
+    .col-md-7 a{
+        width: 55%;
+    }
+}
+@media screen and (max-width:767px){
+    .headerTxt{
+        width: 80%;
+    }
+    .logo{
+        display: none;
+    }
+    .col-md-5 img{
+        display: block;
+    }
+    .content{
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:585px){
+    .main{
+        padding-top: 88px;
+    }
+}
+@media screen and (max-width:575px){
+    .main{
+        width: 103vw;
+    }
+}
+@media screen and (max-width:465px){
+    .headerTxt h3{
+        font-size: 40px;
+    }
+    .headerTxt p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .header{
+        height: 200px;
+    }
+    .col-md-12{
+        margin-top: 15px;
+    }
+    .col-md-6{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:410px){
+    .col-md-7 a{
+        width: 100%;
+    }
+}
+@media screen and (max-width:380px){
+    .headerTxt h3{
+        font-size: 34px;
+    }
+    .headerTxt p{
+        font-size: 14px;
+    }
+}
+

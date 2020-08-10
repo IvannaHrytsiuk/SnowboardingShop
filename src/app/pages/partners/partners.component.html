@@ -1,0 +1,41 @@
+<div class="main">
+    <div class="header">
+        <div class="headerTxt">
+            <h3>OUR PARTNERS</h3>
+            <p>We have chosen a special selection of partners we work closely with, and found the best offers we can to help your enjoy your experience with us!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FAPART-1024x377.jpg?alt=media&token=529f985e-3df6-496b-8fd7-f2a48908d045" alt="">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>CHALET MARY</h3>
+                <p>Looking for accommodation in Courchevel 1300, Le Praz? SnowLimits can highly recommend a fantastic apartment.<br><br>Chalet Mary is a 2 double bedroom duplex ski apartment in a central position in the pretty Savoie village of Le Praz, Courchevel 1300. The apartment has been refurbished and modernised and is very well equipped for self-catering. It has a modern family bathroom with separate loo, and ensuite shower room with loo, to the master bedroom.<br><br>Rental: <i>Sunday to Sunday only <br>Arrivals from 2pm<br>Vacate by 10am</i></p>
+            </div>
+            <div class="col-md-6">
+                <h3>THE SPACE</h3>
+                <p>The ski apartment is ideal for two couples, or for parents and 2 or 3 children.<br>Travel cot available on request.<br>Sleeps 6 guests, but we recommend 4, or 5 maximum.<br>Guest access.<br>Free Wifi.<br>Ski locker on ground floor<br>Underground parking space.<br>5 minutes walk to ski lifts (<i>gondola to Courchevel 1850 and chair to top of La Tania gondola</i>).<br>Several excellent restaurants/bars in traditional Savoie village all within a short walk.<br>Choice of ski hire shops, Boulangerie, Huit a Huit, La Poste/Tabac, Savoie Fromagerie and excellent Boucherie all in the village, open in Ski Season and Summer Season.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="container">
+            <div class="col-md-12 content" *ngFor="let partner of partners">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div [ngStyle]="{ 'background-image': 'url(' + partner.image + ')'}" class="logo"></div>
+                        <img src={{partner.image}} alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <p innerHTML = {{partner.description}}></p>
+                            <a class="btn btn-warning" href={{partner.link}}>Visit {{partner.name}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

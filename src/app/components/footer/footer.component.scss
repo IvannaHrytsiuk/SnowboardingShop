@@ -1,10 +1,7 @@
 footer{
-    height: 320px;
+    height: 100%;
     background-color: black;
     padding-top: 40px;
-}
-.isActive{
-    height: 500px;
 }
 h4{
     color: white;
@@ -122,7 +119,62 @@ option:hover{
 a:hover{
     color: white;
 }
+hr{
+    display: none;
+}
 #footerEmail input[type="submit"]:hover{
     background-color: black;
     color: white;
+}
+.isActive{
+    height: 500px;
+}
+@media screen and (max-width: 1199px) {
+    li{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .col-md-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin:20px 0;
+    }
+    .isActive{
+        height: 675px;
+    }
+    .col-md-6{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .isActive{
+        height: 710px;
+    }
+    .col-md-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    #footer{
+        width: 103vw;
+        padding: 0;
+    }
+    .col-md-3{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left !important;
+    }
+    h4{
+        margin-bottom: 5px;
+        font-size: large;    
+    }
+    a{
+        font-size: large;
+    }
+    .isActive{
+        height: 1205px;
+    }
 }

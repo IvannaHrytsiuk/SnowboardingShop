@@ -1,24 +1,131 @@
-<div class="container">
+<div class="container" style="padding-top: 100px;">
     <div class="leftAside">
+        <div class="col-md-3">
+            <h4>Sort by:</h4>
+            <ul>
+                <li class="nav-item">
+                    <a (click)="showLowPrice()" id="activeA1">Price - low to high</a> 
+                </li>
+                <li class="nav-item">
+                    <a (click)="showHighPrice()" id="activeA2">Price - high to low</a> 
+                </li>
+                <li class="nav-item">
+                    <a (click)="showAZ()" id="activeA3">Name A-Z</a> 
+                </li>
+                <li class="nav-item">
+                    <a (click)="showZA()" id="activeA4">Name Z-A</a> 
+                </li>
+            </ul>
+        </div>
         <div class="col-md-3">
             <h4>Category:</h4>
             <ul>
-                <a *ngFor="let categ of category; let i=index" [routerLink]="[ '/shop/'+ categ.id ]" routerLinkActive="active">
-                    <li>{{categ.categoriesName}}</li>
-                </a>
+                <li class="nav-item" *ngFor="let categ of category; let i=index">
+                    <a [routerLink]="[ '/shop/'+ categ.id ]" routerLinkActive="active">{{categ.categoriesName}}</a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="mainAside">
         <div class="row">
-            <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of products">
-                <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
-                <div class="card-body">
-                <h5 class="card-title">{{prod.productName}}</h5>
-                <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
-                <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
-                <p class="prodPrice" >{{prod.price |currency}}</p>
-                <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+            <div class="buttonDrop">
+                <div class="btn-group col-sm-6" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-warning dropdown-toggle"
+                            aria-controls="dropdown-basic">
+                      Sort by: <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic">
+                        <li role="menuitem">
+                            <a class="dropdown-item" (click)="showLowPrice()">Price - low to high</a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="dropdown-item" (click)="showHighPrice()">Price - high to low</a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="dropdown-item" (click)="showAZ()">Name A-Z</a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="dropdown-item"  (click)="showZA()">Name Z-A</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group col-sm-6" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-warning dropdown-toggle"
+                            aria-controls="dropdown-basic">
+                      Category: <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic">
+                        <li role="menuitem" *ngFor="let categ of category">
+                            <a class="dropdown-item">{{categ.categoriesName}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 100%;" class="row" id="standart">
+                <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of products">
+                    <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
+                    <div class="card-body">
+                        <h5 class="card-title">{{prod.productName}}</h5>
+                        <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
+                        <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
+                        <p class="prodPrice" >{{prod.price |currency}}</p>
+                        <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="lowPrice">
+                <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of arrLowPrice">
+                    <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
+                    <div class="card-body">
+                        <h5 class="card-title">{{prod.productName}}</h5>
+                        <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
+                        <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
+                        <p class="prodPrice" >{{prod.price |currency}}</p>
+                        <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="highPrice">
+                <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of arrHighPrice">
+                    <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
+                    <div class="card-body">
+                        <h5 class="card-title">{{prod.productName}}</h5>
+                        <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
+                        <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
+                        <p class="prodPrice" >{{prod.price |currency}}</p>
+                        <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="nameAZ">
+                <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of arrAZ">
+                    <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
+                    <div class="card-body">
+                        <h5 class="card-title">{{prod.productName}}</h5>
+                        <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
+                        <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
+                        <p class="prodPrice" >{{prod.price |currency}}</p>
+                        <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="nameZA">
+                <div class="card col-md-4" style="width: 20rem;" *ngFor="let prod of arrZA">
+                    <img src={{prod.image}} class="card-img-top" alt="..." [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">
+                    <div class="card-body">
+                        <h5 class="card-title">{{prod.productName}}</h5>
+                        <p class="prodSize" style="font-size:14px"><strong>Category:</strong> {{prod.categories.categoriesName}}</p>
+                        <p class="prodSize"><strong>Size:</strong> {{prod.size}}</p>
+                        <p class="prodPrice" >{{prod.price |currency}}</p>
+                        <a class="btn btn-outline-warning"  [routerLink]="[ '/shop/'+prod.categories.categoriesName | lowercase, prod.id ]">More details</a>
+                    </div>
+                    <hr>
                 </div>
             </div>
         </div>

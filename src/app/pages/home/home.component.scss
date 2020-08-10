@@ -2,7 +2,6 @@ h1{
     text-align: left;
     font-size: 4em;
     font-weight: 800;
-
 }
 .carousel-caption{
     text-align: right;
@@ -133,6 +132,7 @@ main{
     width: 100%;
     height: 100px;
     margin-top: 50px;
+    cursor: pointer;
 }
 .textAnimation p{
     color: white;
@@ -152,4 +152,138 @@ main{
 hr{
     border-color: white;
     margin: 5px;
+}
+@media screen and (max-width: 1199px) {
+    .mensStyle, .wonensStyle, .saleStyle{
+        flex: 0 0 32%;
+        max-width: 32%;
+        margin: 50px 5px;
+    }
+    .featuresBlock .col-md-3{
+        flex: 0 0 23%;
+        max-width: 23%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .mensStyle, .wonensStyle, .saleStyle{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    main, .bottomBlock{
+        padding-top: 50px;
+    }
+    .col-md-7{
+        padding-top: 5%;
+    }
+    .featuresBlock .col-md-3{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+@media screen and (max-width: 954px) {
+    .carousel-caption{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 700px) {
+    carousel{
+        display: none;
+    }
+    main{
+        padding-top: 30px;
+    }
+    .col-md-3{
+        flex: 0 0 98%;
+        max-width: 98%;
+    }
+    .mensStyle, .wonensStyle, .saleStyle{
+        margin:1em;
+    }
+    .content{
+        background-size: contain;
+        height: 450px;
+    }
+    #secondText{
+        display: none;
+    }
+    .bottomBlock{
+        padding-top: 0;
+    }
+    .featuresBlock .col-md-3{
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin: 1em 5px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .content{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .featuresBlock .col-md-3{
+        background-repeat: no-repeat;
+        margin: 1em auto;
+        flex: 0 0 52%;
+        max-width: 52%;
+    }
+    .content{
+        display: none;
+    }
+}
+@media screen and (max-width: 519px) {
+    .featuresBlock .col-md-3{
+        background-repeat: no-repeat;
+        margin: 1em 25px;
+        flex: 0 0 90%;
+        max-width: 90%;
+        background-size: 100%;
+    }
+}
+@media screen and (max-width: 460px) {
+    .featuresBlock .col-md-3{
+        flex: 0 0 92%;
+        max-width: 92%;
+    }
+}
+@media screen and (max-width: 425px) {
+    main{
+        padding-top: 0px;
+    }
+    .mensStyle, .wonensStyle, .saleStyle{
+        margin:1em;
+        height: 200px;
+        background-size: 96%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    .featuresBlock .col-md-3{
+        flex: 0 0 92%;
+        max-width: 92%;
+    }
+    .mensStyle h2, .wonensStyle h2, .saleStyle h2{
+        top:50%
+    }
+    .mensStyle button, .wonensStyle button, .saleStyle button{
+        top:70%
+    }
+    .bottomBlock{
+        padding-top: 0;
+    }
+    .container h1{
+        margin-bottom: 0;
+    }
+    .featuresBlock{
+        padding: 0 10px 0 1em;
+    }
+}
+@media screen and (max-width: 396px) {
+    .container h1{
+        font-size: 2em;
+    }
+    .container p{
+        font-size: 14px;
+    }
 }

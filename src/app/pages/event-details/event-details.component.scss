@@ -1,9 +1,17 @@
+.mainBlock{
+    padding-top: 100px;
+}
 .detailsHeader{
-    width: 100%;
-    height: 230px;
+    height: 330px;
     background: rgb(85,85,85);
     background: linear-gradient(90deg, rgba(85,85,85,1) 38%, rgba(133,133,133,1) 100%);
     color: white;
+    width: 100%;
+}
+.dd{
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 5%;
 }
 .col-md-8 h1{
     font-weight: 700;
@@ -39,6 +47,7 @@
 }
 .datemark{
     font-size: 13px;
+    margin: 0 5%;
 }
 .book img{
     width: 45px;
@@ -115,6 +124,7 @@
 }
 .information{
     margin: 50px 0;
+    text-align: justify;
 }
 .information h2{
     text-align: center;
@@ -129,9 +139,10 @@
     line-height: 1.6;
 }
 .photos{
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 420px;
+    background-position: center;
 }
 p a, h4 a{
     color: #dc3545;
@@ -143,4 +154,303 @@ p a, h4 a{
 }
 .information h4{
     margin-left:0;
+}
+iframe{
+    width: 690px;
+    height: 360px;
+}
+@media screen and (max-width:1199px){
+    .timer{
+        font-size: 35px;
+    }
+    .datemark{
+        font-size: 10px;
+    }
+    .dd{
+        max-width: 960px;
+    }
+    .book div{
+        width: 70%;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+@media screen and (max-width:991px){
+    .col-md-8{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .col-md-4{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .detailsHeader{
+        height: 420px;
+    }
+    .col-md-8 h4{
+        margin-bottom: 20px;
+    }
+    .timerBox h5{
+        font-weight: lighter;
+    }
+    .timerBox{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .special{
+        display: none;
+    }
+    .timer{
+        font-size: 45px;
+        margin: 0 9%;
+    }
+    .datemark{
+        font-size: 15px;
+        margin: 0 8.5%;
+    }
+    .dd{
+        max-width: 800px;
+    }
+    .book div{
+        width: 77%;
+    }
+    .container{
+        max-width: 800px;
+    }
+    .eventAtraction{
+        margin-bottom: 30px;
+    }
+    .col-sm-5 img{
+        width: 85%;
+    }
+}
+@media screen and (max-width:767px){
+    .col-md-8 h1{
+        font-size: 31px;
+    }
+    .col-md-8 h4{
+        font-size: 20px;
+    }
+    .col-md-8 span{
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .timerBox{
+        padding-top: 20px;
+    }
+    .timer{
+        font-size: 35px;
+        margin: 0 10%;
+    }
+    .datemark{
+        font-size: 14px;
+        margin: 0 9%;
+    }
+    .detailsHeader{
+        height: 370px;
+    }
+    .timerBox h5{
+        font-size: 22px;
+    }
+    .locationtext{
+        font-size: 25px;
+    }
+    .videoBlock{
+        margin-bottom: 15px;
+    }
+    .locationtext, .information{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .information h2{
+        font-size: 28px;
+    }
+    .information p{
+        font-size: 17px;
+    }
+    .information h3{
+        font-size: 25px;
+    }
+    .photos{
+        height: 390px;
+    }
+    .eventAtraction {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .headAtrac{
+        text-align: center;
+    }
+}
+@media screen and (max-width:760px){
+    .col-md-4{
+        flex: 0 0 55%;
+        max-width: 55%;
+        margin: auto;
+    }
+    .datemark{
+        margin: 0 5%;
+    }
+    .timer{
+        margin: 0 7%;
+    }
+}
+@media screen and (max-width:716px){
+    .photos{
+        height: 370px;
+    }
+}
+@media screen and (max-width:673px){
+    .book div{
+        width: 70%;
+    }
+    .videoBlock{
+        height: 350px;
+    }
+    iframe{
+        height: 100%;
+    }
+    .photos{
+        height: 350px;
+    }
+    .eventAtraction {
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:640px){
+    .photos{
+        height: 320px;
+    }
+}
+@media screen and (max-width:575px){
+    .mainBlock{
+        width: 103vw;
+        padding-top: 88px;
+    }
+    .book, .book a{
+        padding: 8px 15px;
+    }
+    .book img{
+        width: 35px;
+    }
+    .book h5{
+        font-size: 20px;
+    }
+    .book a{
+        font-size: 16px;
+    }
+    .information p{
+        font-size: 16px;
+    }
+    .locationtext, .information h3{
+        font-size: 22px;
+    }
+    .information h2{
+        font-size: 24px;
+    }
+    .information h3{
+        margin-top: 15px;
+    }
+    .col-sm-5 img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .col-sm-7{
+        text-align: center;
+    }
+}
+@media screen and (max-width:492px){
+    .book div{
+        width: 65%;
+    }
+    .videoBlock{
+        height: 250px;
+    }
+    .locationtext, .information h2, .information h3{
+        font-size: 22px;
+    }
+    .information p{
+        font-size: 16px;
+    }
+    .photos{
+        height: 240px;
+    }
+    .map{
+        display: none;
+    }
+}
+@media screen and (max-width:490px){
+    .col-md-4{
+        display: none;
+    }
+    .detailsHeader{
+        height: 230px;
+    }
+}
+@media screen and (max-width:436px){
+    .book img{
+        width: 30px;
+    }
+    .book h5{
+        font-size: 17px;
+    }
+    .book a{
+        font-size: 13px;
+    }
+    .book div{
+        width: 60%;
+    }
+    .videoBlock{
+        height: 230px;
+    }
+    .photos{
+        height: 210px;
+    }
+}
+@media screen and (max-width:383px){
+    .book a{
+        font-size: 13px;
+        padding: 7px;
+    }
+    .book div{
+        width: 65%;
+    }
+    .videoBlock{
+        height: 200px;
+    }
+    .book h5{
+        font-size: 14px;
+    }
+    .col-md-8 h4{
+        font-size: 18px;
+    }
+    .locationtext{
+        font-size: 18px;
+    }
+    .information h2, .information h3{
+        font-size: 20px;
+    }
+    .information p{
+        font-size: 14px;
+    }
+    .photos{
+        height: 190px;
+    }
+}
+@media screen and (max-width:344px){
+    .book div{
+        width: 62%;
+    }
+    .book img{
+        margin-right: 10px;
+    }
+    .book{
+        padding: 8px 12px;
+    }
 }

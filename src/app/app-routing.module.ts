@@ -17,12 +17,25 @@ import { TeamDetailsComponent } from './pages/team-details/team-details.componen
 import { EventsComponent } from './pages/events/events.component';
 import { EventDetailsComponent } from './pages/event-details/event-details.component';
 import { ExperiencesComponent } from './pages/experiences/experiences.component';
-
+import { BlogComponent } from './pages/blog/blog.component';
+import { BlogDetailsComponent } from './pages/blog-details/blog-details.component';
+import { AdminBlogComponent } from './admin/admin-blog/admin-blog.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { CareersComponent } from './pages/careers/careers.component';
+import { PartnersComponent } from './pages/partners/partners.component';
+import { AdminPartnersComponent } from './admin/admin-partners/admin-partners.component';
+import { HelpComponent } from './pages/help/help.component';
+import { DeliveryComponent } from './pages/help/delivery/delivery.component';
+import { ReturnsComponent } from './pages/help/returns/returns.component';
+import { WarrantyComponent } from './pages/help/warranty/warranty.component';
+import { PrivacyComponent } from './pages/help/privacy/privacy.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomeComponent},
+  {path:'contact', component: ContactComponent},
   {path: 'customer', component: CustomerComponent},
   {path: 'register', component: RegisterComponent},
   {path:'shop/:category', component: ShopComponent},
@@ -30,7 +43,11 @@ const routes: Routes = [
   {path:'experiences', component: ExperiencesComponent},
   {path:'team', component: TeamComponent},
   {path:'team/:name/:id', component: TeamDetailsComponent},
+  {path:'blog', component: BlogComponent},
+  {path:'blog/:title/:id', component: BlogDetailsComponent},
   {path:'events', component: EventsComponent},
+  {path:'careers', component: CareersComponent},
+  {path:'partners', component: PartnersComponent},
   {path:'events/:name/:id', component: EventDetailsComponent},
   {path:'shop/:categories/:id', component: ProductDetailsComponent},  
   {path:'admin', component: AdminComponent, children:[
@@ -38,8 +55,17 @@ const routes: Routes = [
     {path:'events', component: AdminEventsComponent},
     {path:'products', component: AdminProductsComponent},
     {path:'teams', component: AdminTeamComponent},
+    {path:'partners', component: AdminPartnersComponent},
     {path:'category', component: CategoryAdminComponent},
+    {path:'admin-blog', component: AdminBlogComponent},
     {path:'register-customers', component: AdminRegisterComponent}
+  ]},
+  {path:'help', component: HelpComponent, children:[
+    // {path:'', redirectTo:'delivery', pathMatch:'full'},
+    {path:'delivery', component: DeliveryComponent},
+    {path:'returns', component: ReturnsComponent},
+    {path:'warranty', component: WarrantyComponent},
+    {path:'privacy-policy', component: PrivacyComponent}
   ]},
 
 ];

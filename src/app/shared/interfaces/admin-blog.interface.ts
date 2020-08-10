@@ -8,5 +8,4 @@ export interface AdmBlog{
     fontWeight:number;
     fontFamily:string;
     fontSize:string;
-    image2:string;
 }

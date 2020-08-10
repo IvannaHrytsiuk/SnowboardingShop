@@ -1,0 +1,38 @@
+<div class="main">
+    <div class="header">
+        <div class="headerTxt">
+            <h3>Help & FAQs</h3>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="nav" id="myTab">
+            <a class="nav-link" routerLink = 'delivery' routerLinkActive="active">Shipping</a>
+            <a class="nav-link" routerLink = 'returns' routerLinkActive="active">Returns</a>
+            <a class="nav-link" routerLink = 'warranty' routerLinkActive="active">Warranty</a>
+            <a class="nav-link" routerLink = 'privacy-policy' routerLinkActive="active">Privacy Policy</a>
+        </nav>
+        <div class="btn-group" style="width: 100%;" dropdown>
+            <button id="button-basic" style="width: 100%;" dropdownToggle type="button" class="btn btn-white dropdown-toggle" aria-controls="dropdown-basic">Help & FAQs
+                <span class="caret"></span>
+            </button>
+            <ul style="width: 100%;" id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+              <li role="menuitem">
+                  <a class="dropdown-item" routerLink = 'delivery' routerLinkActive="active" >Shipping</a>
+                </li>
+              <li role="menuitem">
+                  <a class="dropdown-item" routerLink = 'returns' routerLinkActive="active" >Returns</a>
+            </li>
+              <li role="menuitem">
+                  <a class="dropdown-item" routerLink = 'warranty' routerLinkActive="active">Warranty</a>
+            </li>
+              <li role="menuitem">
+                  <a class="dropdown-item" routerLink = 'privacy-policy' routerLinkActive="active" >Privacy Policy</a>
+            </li>
+            </ul>
+          </div>
+        <hr>
+        <div class="tab-content" id="myTabContent">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

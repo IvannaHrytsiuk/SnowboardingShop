@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="buttonBlock">
+        <button (click)="addModal(addNew)">Add new partner</button>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Link</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let partner of adminPartners; let i=index">
+            <th>{{i+1}}</th>
+            <td>{{partner.name}}</td>
+            <td>{{partner.link}}</td>
+            <td innerHTML={{partner.description}}></td>
+            <td><img src={{partner.image}}></td>
+            <td><button class="btn btn-warning" (click)="editModal(edit, partner)">Edit</button></td>
+            <td><button class="btn btn-danger" (click)="markDeleteModal(deleteP, partner)">Delete</button></td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #addNew>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Add new partner</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <label>Name: </label>
+        <input type="text" class="form-control" name="newName" [(ngModel)]="newName">
+        <label>Link: </label>
+        <textarea class="form-control" name="newLink" [(ngModel)]="newLink"></textarea>
+        <label>Description: </label>
+        <textarea class="form-control" name="newDescrip" [(ngModel)]="newDescrip"></textarea>
+        <label>Image: </label>
+        <input type="text" class="form-control" name="newImage" [(ngModel)]="newImage">
+        <div class="">
+            <button type="button" class="btn btn-light btnGroup" (click)="modalRef.hide()">Cancel</button>
+            <button type="button" class="btn btn-dark btnGroup" [disabled]="!newName || !newLink || !newDescrip || !newImage" (click)="modalRef.hide()" (click)="addNewPartner()">Add</button>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #edit>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Edit partner information</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef2.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+          <input type="text" class="form-control" name="editName" [(ngModel)]="editName">
+          <input type="text" class="form-control" name="editLink" [(ngModel)]="editLink">
+          <textarea class="form-control" name="editDescrip" [(ngModel)]="editDescrip"></textarea>
+          <input type="text" class="form-control" name="editImage" [(ngModel)]="editImage">
+          <div>
+              <button type="button" class="btn btn-light btnGroup" (click)="modalRef2.hide()">Cancel</button>
+              <button type="button" class="btn btn-dark btnGroup"  (click)="addNewPartner()" (click)="modalRef2.hide()">Save edit</button>
+          </div>
+    </div>
+</ng-template>
+
+<ng-template #deleteP>
+    <div class="modal-header">
+      <h4 class="modal-title pull-center">Are you sure?</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef3.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div>
+        <button type="button" class="btn btn-light btnGroup" (click)="modalRef3.hide()">No</button>
+        <button type="button" class="btn btn-dark btnGroup" (click)="deletePartner()">Yes</button>
+    </div>
+</ng-template>

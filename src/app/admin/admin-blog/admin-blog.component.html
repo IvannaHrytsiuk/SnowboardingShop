@@ -6,9 +6,9 @@
         <div class="card" *ngFor="let public of adminBlog">
             <img src={{public.image}} class="card-img-top">
             <div class="card-body">
-              <p class="card-text">{{public.textPreview}}</p>
+              <p class="card-text">{{public.textPriview}}</p>
             </div>
-            <a class="btn btn-warning" (click)="openModal(information)">More information</a>
+            <a class="btn btn-warning" (click)="openModal(information, public.id)">More information</a>
             <ng-template #information>
                 <div class="modal-header">
                   <h4 class="modal-title pull-left">{{public.title}}</h4>
@@ -18,12 +18,12 @@
                 </div>
                 <div class="modal-body">
                     <img src={{public.image}} alt="">
-                    <p class="textPrev">{{public.textPreview}}</p>
-                    <iframe width="760" height="400" [src]='url' frameborder="0" allowfullscreen></iframe>
+                    <p class="textPrev">{{public.textPriview}}</p>
+                    <iframe width="760" height="400" [src]='videoURL()' frameborder="0" allowfullscreen></iframe>
                     <p class="textPrev" innerHTML="{{public.text}}"></p>
                     <div class="btnGroup">
-                        <button type="button" class="btn btn-light" (click)="modalRef.hide()">Cancel</button>
-                        <button type="button" class="btn btn-warning" (click)="editModal(editNested, public)" (click)="modalRef.hide()" > Edit</button>
+                        <button type="button" class="btn btn-danger" (click)="modalRef.hide()" (click)="delModal(delNested, public)">Delete</button>
+                        <button type="button" class="btn btn-warning" (click)="editModal(editNested, public)" (click)="modalRef.hide()"> Edit</button>
                     </div>                
                 </div>
             </ng-template>
@@ -69,9 +69,7 @@
         <option value="18px">18px</option>
         <option value="20px">20px</option>
         <option value="22px">22px</option>
-    </select>     
-    <label>More image: </label>
-    <input type="text" class="form-control" name="newImg2" [(ngModel)]="newImg2">
+    </select>
     <div class="btnGroup">
         <button type="button" class="btn btn-light" (click)="modalRef.hide()">Cancel</button>
         <button type="button" class="btn btn-dark" (click)="addNewPublication()" (click)="modalRef.hide()" [disabled] = '!newTitle || !newImg || !newVideo || !newPreview || !newText || !selectedWeight || !selectedFamily || !selectedSize' > Add</button>
@@ -117,12 +115,25 @@
         <option value="18px">18px</option>
         <option value="20px">20px</option>
         <option value="22px">22px</option>
-    </select>     
-    <label>More image: </label>
-    <input type="text" class="form-control" name="editImg2" [(ngModel)]="editImg2">
+    </select>
     <div class="btnGroup">
         <button type="button" class="btn btn-light" (click)="modalRef2.hide()">Cancel</button>
         <button type="button" class="btn btn-dark" (click)="addNewPublication()" (click)="modalRef2.hide()">Save edit</button>
     </div>   
   </div>
 </ng-template>
+
+<ng-template #delNested>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Are you sure?</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef3.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="btnGroup">
+      <button type="button" class="btn btn-dark" (click)="modalRef3.hide()">No</button>
+      <button type="button" class="btn btn-danger" (click)="deletePublic()" (click)="modalRef3.hide()">Yes</button>
+    </div>
+  </div>
+</ng-template> 

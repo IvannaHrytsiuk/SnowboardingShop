@@ -90,7 +90,72 @@ h3{
 }
 .descript{
     margin-top: 30px;
+    text-align: justify;
 }
 table{
     margin-top: 30px;
+}
+.downTxt{
+    display: block;
+}
+.uppertxt{
+    display: none;
+}
+@media screen and (max-width:991px){
+    .col-md-6{
+        margin: 30px 0;
+    }
+    .freeSpace60{
+        height: 10px;
+    }
+    table{
+        margin-top: 55px;
+    }
+    .descript{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:767px){
+    .downTxt{
+        display: none;
+    }
+    .uppertxt{
+        display: block;
+    }
+    h3{
+        font-size: 26px;
+    }
+    img{
+        width: 60%;
+        float: left;    
+    }
+    table{
+        float: left;
+        width: 40%;
+        margin-top: 0;
+        font-size: 14px;
+    }
+    th, td{
+        padding: 9px;
+    }
+    .orderBlock{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:528px){
+    img{
+        width: 60%;
+        margin-left: 20%;
+    }
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    table{
+        width: 100%;
+    }
+    .col-md-6{
+
+        margin: 10px 0;
+    }
 }

@@ -1,120 +1,120 @@
-<div class="detailsHeader">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>{{viewEvent?.name}}</h1>
-                <h4>{{viewEvent?.date}}</h4>
-                <div>
-                    <span *ngFor="let t of viewEvent?.type">{{t}}</span>
+<div class="mainBlock">
+    <div class="detailsHeader">
+            <div class="row dd">
+                <div class="col-md-8">
+                    <h1>{{viewEvent?.name}}</h1>
+                    <h4>{{viewEvent?.date}}</h4>
+                    <div>
+                        <span *ngFor="let t of viewEvent?.type">{{t}}</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="timerBox">
-                    <h5><b>{{viewEvent?.name | titlecase}}</b> starts in</h5>
-                    <span class="timer">{{days}}</span>
-                    <span class="timer">{{hours}}</span>
-                    <span class="timer">{{min}}</span>
-                    <span class="timer">{{sec}}</span>
-                    <br>
-                    <span class="datemark" style="margin-right: 65px; margin-left: 10px;">DAYS</span>
-                    <span class="datemark" style="margin-right: 30px;">HOURS</span>
-                    <span class="datemark" style="margin-right: 30px;">MINUTES</span>
-                    <span class="datemark">SECONDS</span>
+                <div class="col-md-4">
+                    <div class="timerBox">
+                        <h5><b>{{viewEvent?.name | titlecase}}</b><br class="special"> starts in</h5>
+                        <span class="timer">{{days}}</span>
+                        <span class="timer">{{hours}}</span>
+                        <span class="timer">{{min}}</span>
+                        <span class="timer">{{sec}}</span>
+                        <br>
+                        <span class="datemark" >DAYS</span>
+                        <span class="datemark">HOURS</span>
+                        <span class="datemark">MINUTES</span>
+                        <span class="datemark">SECONDS</span>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row second">
-        <div class="col-md-8">
-            <div class="box">
-                <h4>Plan for {{viewEvent?.name | titlecase}}</h4>
-                <div class="container containerPadd">
-                    <div class="book">
-                        <div>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-bed-100.png?alt=media&token=953c777f-0558-4cc8-a9c9-7a8073798e0b" alt="">
-                            <h5>Hotels & Hostels</h5>
+    <div class="container">
+        <div class="row second">
+            <div class="col-md-8">
+                <div class="box">
+                    <h4>Plan for {{viewEvent?.name | titlecase}}</h4>
+                    <div class="container containerPadd">
+                        <div class="book">
+                            <div>
+                                <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-bed-100.png?alt=media&token=953c777f-0558-4cc8-a9c9-7a8073798e0b" alt="">
+                                <h5>Hotels & Hostels</h5>
+                            </div>
+                            <a href="https://www.booking.com/">BOOK NOW</a>
                         </div>
-                        <a href="https://www.booking.com/">BOOK NOW</a>
-                    </div>
-                    <div class="book book1">
-                        <div>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-tripadvisor-100.png?alt=media&token=9617f8ce-d1a2-4202-9923-f10f836dfc67" alt="">
-                            <h5>Expiriences</h5>
+                        <div class="book book1">
+                            <div>
+                                <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-tripadvisor-100.png?alt=media&token=9617f8ce-d1a2-4202-9923-f10f836dfc67" alt="">
+                                <h5>Expiriences</h5>
+                            </div>
+                            <a href="https://www.tripadvisor.com/">BOOK NOW</a>
                         </div>
-                        <a href="https://www.tripadvisor.com/">BOOK NOW</a>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-treatment-100.png?alt=media&token=8f4ddbc7-89ab-40c7-8de1-2fdf7ad8390d" alt="">
-                            <h5>Insurance</h5>
+                        <div class="book">
+                            <div>
+                                <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ficons8-treatment-100.png?alt=media&token=8f4ddbc7-89ab-40c7-8de1-2fdf7ad8390d" alt="">
+                                <h5>Insurance</h5>
+                            </div>
+                            <a href="https://www.njm.com/">BOOK NOW</a>
                         </div>
-                        <a href="https://www.njm.com/">BOOK NOW</a>
                     </div>
                 </div>
-            </div>
-            <div class="videoBlock">
-                <iframe width="690" height="360" [src]='url' frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="information">
-                <h3 class="locationtext">{{viewEvent?.location}}</h3>
-                <h2>{{viewEvent?.name | titlecase}}: {{viewEvent?.slogan}}</h2>
-                <p innerHTML="{{viewEvent?.description}}"></p>
-                <div class="photos" style="background-image: url({{viewEvent?.image1}});"></div>
-                <h3>What to wear</h3>
-                <p innerHTML="{{viewEvent?.wear}}"></p>
-                <h3>What to pack</h3>
-                <p innerHTML="{{viewEvent?.pack}}"></p>
-                <h3>Buy tickets</h3>
-                <p innerHTML="{{viewEvent?.ticket}}"></p>
-                <div class="photos" [ngStyle]="{'display': !viewEvent?.image2? 'none' : 'block'}" style="background-image: url({{viewEvent?.image2}});"></div>
-                <h3>Things to do in {{str}}</h3>
-                <p innerHTML="{{viewEvent?.toDo}}"></p>
-                <div class="photos" [ngStyle]="{'display': !viewEvent?.image3? 'none' : 'block'}" style="background-image: url({{viewEvent?.image3}});"></div>
-                <h3>How to get there</h3>
-                <p innerHTML="{{viewEvent?.get}}"></p>
-                <div #maper style="width:100%;height:400px"></div>
-                <br>
-                <p>Read more about <a [routerLink]="['/events']">other festivals</a> in the snow.</p>
-                <hr>
-                <div class="tips">
-                    <h3>France Travel Tips:</h3>
-                    <p><b>Plan ahead:</b> Book your perfect trip with our travel guide and destination information. Does country require a visa? Check the visa requirements before you get caught up during your travel.</p>
-                    <p><b>Stay safe:</b> Even the best-laid plans can head south. Battleface can help you stay safe in dangerous or hostile situations as well as that epic road trip or catching a few waves. How to stay safe during {{viewEvent?.name}}? If you’re not covered for your trip yet, get your quote here.</p>
-                    <p><b>Spend money wisely:</b> Take public transport and dine in from time to time are common saving tips during traveling. How to spend money wisely? Make use of technology. There’s an app for everything.</p>
+                <div class="videoBlock">
+                    <iframe [src]='url' frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="information">
+                    <h3 class="locationtext">{{viewEvent?.location}}</h3>
+                    <h2>{{viewEvent?.name | titlecase}}: {{viewEvent?.slogan}}</h2>
+                    <p innerHTML="{{viewEvent?.description}}"></p>
+                    <div class="photos" style="background-image: url({{viewEvent?.image1}});"></div>
+                    <h3>What to wear</h3>
+                    <p innerHTML="{{viewEvent?.wear}}"></p>
+                    <h3>What to pack</h3>
+                    <p innerHTML="{{viewEvent?.pack}}"></p>
+                    <h3>Buy tickets</h3>
+                    <p innerHTML="{{viewEvent?.ticket}}"></p>
+                    <div class="photos" [ngStyle]="{'display': !viewEvent?.image2? 'none' : 'block'}" style="background-image: url({{viewEvent?.image2}});"></div>
+                    <h3>Things to do in {{str}}</h3>
+                    <p innerHTML="{{viewEvent?.toDo}}"></p>
+                    <div class="photos" [ngStyle]="{'display': !viewEvent?.image3? 'none' : 'block'}" style="background-image: url({{viewEvent?.image3}});"></div>
+                    <h3>How to get there</h3>
+                    <p innerHTML="{{viewEvent?.get}}"></p>
+                    <div #maper style="width: 100%; height: 400px;" class="map"></div>
+                    <br>
+                    <p>Read more about <a [routerLink]="['/events']">other festivals</a> in the snow.</p>
                     <hr>
-                    <h4>You can also follow us on <a href="https://www.facebook.com/">Facebook</a>, <a href="https://www.instagram.com/">Instagram</a>, <a href="https://twitter.com/">Twitter</a> and <a href="http://youtube.com/">YouTube</a>.</h4>
-                </div>    
-            </div>
-        </div>
-        <div class="col-md-4 eventAtraction">
-            <h5 class="headAtrac">The best and most unique action sports and adventure events in France</h5>
-            <hr>
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FBest-festivals-in-December-.jpg?alt=media&token=fa89576d-b871-4625-b976-e3badb3473fa" >
-                </div>
-                <div class="col-sm-7">                    
-                    <span class="text">9 Rad Worldwide Festivals in December</span>
+                    <div class="tips">
+                        <h3>France Travel Tips:</h3>
+                        <p><b>Plan ahead:</b> Book your perfect trip with our travel guide and destination information. Does country require a visa? Check the visa requirements before you get caught up during your travel.</p>
+                        <p><b>Stay safe:</b> Even the best-laid plans can head south. Battleface can help you stay safe in dangerous or hostile situations as well as that epic road trip or catching a few waves. How to stay safe during {{viewEvent?.name}}? If you’re not covered for your trip yet, get your quote here.</p>
+                        <p><b>Spend money wisely:</b> Take public transport and dine in from time to time are common saving tips during traveling. How to spend money wisely? Make use of technology. There’s an app for everything.</p>
+                        <hr>
+                        <h4>You can also follow us on <a href="https://www.facebook.com/">Facebook</a>, <a href="https://www.instagram.com/">Instagram</a>, <a href="https://twitter.com/">Twitter</a> and <a href="http://youtube.com/">YouTube</a>.</h4>
+                    </div>    
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FChristiaan-Bradley.jpg?alt=media&token=ba2b2689-3f85-4032-b5ed-265e38af0716" >
+            <div class="col-md-4 eventAtraction">
+                <h5 class="headAtrac">The best and most unique action sports and adventure events in France</h5>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FBest-festivals-in-December-.jpg?alt=media&token=fa89576d-b871-4625-b976-e3badb3473fa" >
+                    </div>
+                    <div class="col-sm-7">                    
+                        <span class="text">9 Rad Worldwide Festivals in December</span>
+                    </div>
                 </div>
-                <div class="col-sm-7">
-                    <span class="text">Rad Spotlight: Christiaan Bradley Surfboard Shaper</span>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FChristiaan-Bradley.jpg?alt=media&token=ba2b2689-3f85-4032-b5ed-265e38af0716" >
+                    </div>
+                    <div class="col-sm-7">
+                        <span class="text">Rad Spotlight: Christiaan Bradley Surfboard Shaper</span>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FSnowboxx-Festival-2019-.jpg?alt=media&token=0b9b20e2-e8f0-4c28-9e0e-490772f85515" >
-                </div>
-                <div class="col-sm-7">
-                    <span class="text">Rad Review – Snowboxx Festival </span>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FSnowboxx-Festival-2019-.jpg?alt=media&token=0b9b20e2-e8f0-4c28-9e0e-490772f85515" >
+                    </div>
+                    <div class="col-sm-7">
+                        <span class="text">Rad Review – Snowboxx Festival </span>
+                    </div>
                 </div>
             </div>
         </div>

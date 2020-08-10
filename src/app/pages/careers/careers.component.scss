@@ -1,0 +1,102 @@
+.main{
+    padding-top: 100px;
+}
+.mainheader{
+    background-color: #ffc107;
+    height: 150px;
+}
+.mainHeaderTxt{
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+.mainHeaderTxt h2{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px
+}
+h3{
+    margin-top: 30px;
+    font-size: 24px;
+    text-align: justify;
+}
+p{
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: justify;
+}
+input{
+    width: 50%;
+}
+label{
+    font-size: 16px;
+    margin-top: 10px;
+}
+span{
+    color: #dc3545;
+}
+textarea{
+    height: 100px;
+    width: 90%;
+}
+form{
+    margin-bottom: 30px;
+}
+button{
+    width: 15%;
+}
+@media screen and (max-width:991px){
+    .mainHeaderTxt{
+        width: 70%;
+    }
+    .mainheader{
+        height: 180px;
+    }
+    .col-md-8{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width:585px){
+    .main{
+        padding-top: 88px;
+    }
+}
+@media screen and (max-width:575px){
+    .main{
+        width:103vw;
+    }
+    .mainHeaderTxt h2{
+        font-size: 40px;
+    }
+    .mainHeaderTxt{
+        width: 80%;
+    }
+    .mainheader{
+        height: 150px;
+    }
+    button{
+        width: 30%;
+    }
+}
+@media screen and (max-width:402px){
+    .mainheader{
+        height: 180px;
+    }
+    input{
+        width: 100%;
+    }
+}
+@media screen and (max-width:339px){
+    .mainHeaderTxt h2{
+        font-size: 35px;
+    }
+    .mainheader{
+        height: 160px;
+    }
+}

@@ -1,3 +1,6 @@
+.teamBlock{
+    padding-top: 100px;
+}
 .headerTeam{
     background-color: #ffc107;
     height: 250px;
@@ -61,4 +64,83 @@ ul{
 .teamBlock{
     background-color: black;
     color: white;
+}
+@media screen and (max-width:1199px){
+    .col-md-3 {
+        padding: 5px;
+        padding-top: 15px;
+    }
+    h5{
+        top:75%
+    }
+}
+@media screen and (max-width:991px){
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 15px;
+    }
+    img{
+        height: 210px;
+    }
+    .averageBlock{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:822px){
+    .headerTeamTxt {
+        width: 90%;
+    }
+}
+@media screen and (max-width:767px){
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px 0;
+        height: 300px;
+    }
+    img{
+        height: 270px;
+    }
+    h5{
+        font-size: 2em;
+        top: 80%;
+    }
+}
+@media screen and (max-width:575px){
+     .teamBlock{
+         padding-top: 88px;
+         width: 103vw;
+     }
+     .col-md-3{
+         margin: 0 auto;
+         flex: 0 0 90%;
+        max-width: 90%;
+     }
+     .col-md-8 img{
+         height: 200px;
+     }
+}
+@media screen and (max-width:456px){
+     .headerTeamTxt h3{
+        font-size: 40px;
+    }
+    .headerTeamTxt p{
+        font-size: 14px;
+    }
+    img{
+        height: 220px;
+    }
+    .col-md-3{
+        height: 250px;
+    }
+    h5{
+        top: 73%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:338px){
+     .headerTeamTxt h3{
+        font-size: 35px;
+    }
 }

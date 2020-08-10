@@ -1,0 +1,125 @@
+.container{
+    padding-top: 100px;
+}
+.col-md-5, .col-md-7{
+    margin-top: 50px;
+}
+.col-md-5 h3{
+    color: #555;
+    font-weight: 700;
+}
+.col-md-5 p{
+    color: #555;
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 0;
+}
+a{
+    color: #dc3545;
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: 700;
+}
+.social a{
+    display: block;
+}
+.col-md-8{
+    margin: 50px 0;
+}
+.mainContrentTabs{
+    border: 1px solid #dee2e6;
+    border-top: 0px;
+    padding: 20px;
+    color:#555;
+}
+.mainContrentTabs p{
+    font-size: 17px;
+    line-height: 1.6;   
+}
+label span{
+    color:#dc3545;
+}
+textarea{
+    height: 400px;
+}
+.form-control:focus {   
+  border-color: rgba(255, 193, 7, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 193, 7, 0.6);
+  outline: 0 none;
+}
+label{
+    font-weight: 700;
+}
+.map{
+    width:100%;
+    height:430px;
+}
+.socialBoxNone{
+    display: none;
+    padding: 15px 0;
+}
+.contactNone{
+    display: none;
+}
+.mobileForm{
+      display: none;
+      width: 100%;  
+}
+.mobileForm button{
+    width: 100%;
+    text-align: left;
+}
+@media screen and (max-width:991px){
+    .map{
+        height: 200px;
+    }
+    .col-md-8{
+        margin-top: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .socialBoxNone{
+        display: block;
+    }
+    .socialBox{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .socialBoxNone{
+        display: none;
+    }
+    .socialBox{
+        display: block;
+    }
+    .contactNone{
+        display: block;
+    }
+    .contact{
+        display: none;
+    }
+    .col-md-7{
+        margin-top: 30px;
+    }
+    .col-md-5{
+        margin-top: 0;
+    }
+    tabset{
+        display: none;
+    }
+    .mobileForm{
+        display: block;
+    }
+    .col-md-8{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:585px){
+    .container{
+        padding-top: 88px;
+        width: 103vw;
+    }
+    textarea{
+        height: 200px;
+    }
+}

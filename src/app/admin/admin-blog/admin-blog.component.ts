@@ -14,11 +14,11 @@ export class AdminBlogComponent implements OnInit {
   adminBlog:Array<AdmBlog> = [];
   modalRef: BsModalRef;
   modalRef2: BsModalRef;
+  modalRef3: BsModalRef;
   url:any;
   newTitle:string;
   newVideo:string;
   newPreview:string;
-  newImg2:string;
   newImg:string;
   newText:string;
   selectedWeight:number;
@@ -29,12 +29,13 @@ export class AdminBlogComponent implements OnInit {
   editTitle:string;
   editImg:string;
   editVideo:string;
-  editImg2:string;
   editPreview:string;
   editText:string;
   editWeight:number;
   editFamily:string;
   editSize:string;
+  view:AdmBlog;
+  removePublic:AdmBlog;
  
 
   constructor(private blogService: AdminBlogService,
@@ -54,8 +55,7 @@ export class AdminBlogComponent implements OnInit {
       this.newText,
       this.selectedWeight,
       this.selectedFamily,
-      this.selectedSize,
-      this.newImg2    
+      this.selectedSize
     );
     if(this.adminBlog.length){
       const id = this.adminBlog.slice(-1)[0].id +1;
@@ -71,7 +71,6 @@ export class AdminBlogComponent implements OnInit {
       newPublic.fontWeight = this.editWeight;
       newPublic.fontFamily = this.editFamily;
       newPublic.fontSize = this.editSize;
-      newPublic.image2 = this.editImg2;
       this.blogService.updateJSONPublication(newPublic).subscribe(
         () => {
           this.getPublication();
@@ -87,19 +86,18 @@ export class AdminBlogComponent implements OnInit {
     this.resetForm();
     this.editStatus = false;
   }
-  // doDeleteProduct():void{
-  //   this.adminProductsService.deleteJSONProducts(this.removeProduct.id).subscribe(
-  //     () =>{
-  //       this.getAdminProducts();
-  //     }
-  //   );
-  //   this.removeProduct = null;
-  //   this.modalRef.hide()
-  // }
-  // markDeleteProductModal(deleteM: TemplateRef<any>, product:AdmProduct):void{
-  //   this.modalRef = this.modalService.show(deleteM);
-  //   this.removeProduct = product;
-  // }
+  deletePublic():void{
+    this.blogService.deleteJSONPublication(this.removePublic.id).subscribe(
+      () =>{
+        this.getPublication();
+      }
+    );
+    this.removePublic = null;
+  }
+  delModal(del: TemplateRef<any>, publication:AdmBlog):void{
+    this.removePublic = publication;
+    this.modalRef3 = this.modalService.show(del, { class: 'modal-sm' });
+  }
 
   resetForm():void{
     this.newTitle = "";
@@ -110,7 +108,6 @@ export class AdminBlogComponent implements OnInit {
     this.selectedWeight = null;
     this.selectedFamily = "";
     this.selectedSize = '';
-    this.newImg2 = "";
   }
 
   addModal(addNew: TemplateRef<any>) {
@@ -121,9 +118,6 @@ export class AdminBlogComponent implements OnInit {
     this.blogService.getJSONPublication().subscribe(
       blog => {
         this.adminBlog = blog;
-        for(let i=0; i<this.adminBlog.length; i++){
-          this.url = this._sanitizer.bypassSecurityTrustResourceUrl(this.adminBlog[i].videoLink);
-        }
       },
       err => {
         console.log(err);
@@ -131,8 +125,16 @@ export class AdminBlogComponent implements OnInit {
     )
   }
 
-  openModal(information: TemplateRef<any>) {
+  openModal(information: TemplateRef<any>, id:number) {
     this.modalRef = this.modalService.show(information, { class: 'modal-lg' });
+    this.blogService.getJSONOnePublication(id).subscribe(
+      data =>{
+        this.view = data;
+      }
+    )
+  }
+  videoURL(){
+    return this._sanitizer.bypassSecurityTrustResourceUrl(this.view?.videoLink);
   }
   editModal(edit: TemplateRef<any>, publication:AdmBlog ) {
     this.modalRef2 = this.modalService.show(edit, { class: 'second' });
@@ -144,7 +146,6 @@ export class AdminBlogComponent implements OnInit {
     this.editWeight = publication.fontWeight;
     this.editFamily = publication.fontFamily;
     this.editSize = publication.fontSize;
-    this.editImg2 = publication.image2;
     this.publicID = publication.id;
     this.editStatus = true;
   }

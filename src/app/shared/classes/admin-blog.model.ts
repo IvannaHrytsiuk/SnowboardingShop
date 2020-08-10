@@ -11,6 +11,5 @@ export class Blogs implements AdmBlog{
     public fontWeight:number,
     public fontFamily:string,
     public fontSize:string,
-    public image2:string
     ){}
 }

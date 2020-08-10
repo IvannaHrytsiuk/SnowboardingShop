@@ -1,3 +1,6 @@
+.experianceBlock{
+    padding-top: 100px;
+}
 .headerExper{
     background-color: #ffc107;
     height: 250px;
@@ -19,9 +22,6 @@
     text-align: center;
     margin-top: 30px;
 }
-.container{
-    padding-top: 50px;
-}
 .col-md-6 img{
     width: 100%;
 }
@@ -35,7 +35,7 @@
 }
 .col-md-6 h2{
     line-height: 1.6;
-    margin-top: 55px;
+    margin-top: 30px;
 }
 .textBlock{
     padding-right: 30px;
@@ -43,4 +43,74 @@
 p a{
     text-decoration: none;
     color: #dc3545;
+}
+@media screen and (max-width:991px){
+    .col-md-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .col-md-6 h2{
+        margin-top: 0;
+    }
+    .col-md-6 p{
+        text-align: justify;
+    }
+    .col-md-6 img{
+        width: 95%;
+    }
+}
+@media screen and (max-width:875px){
+    .headerExperTxt{
+        width: 80%;
+    }
+    .headerExper{
+        height: 200px;
+    }
+}
+@media screen and (max-width:767px){
+    .col-md-6{
+        padding-left: 0 !important;
+    }
+    .col-md-6 h2{
+        font-size: 31px;
+    }
+}
+@media screen and (max-width:585px){
+    .experianceBlock{
+        padding-top: 88px;
+    }
+}
+@media screen and (max-width:575px){
+    .experianceBlock{
+        width: 103vw;
+    }
+    .col-md-6{
+        padding:0 18px !important;
+    }
+    .col-md-6 img{
+        width: 100%;
+    }
+    .col-md-6{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:531px){
+    .headerExperTxt h3{
+        font-size: 40px;
+    }
+    .headerExper{
+        height: 175px;
+    }
+}
+@media screen and (max-width:434px){
+    .headerExper{
+        height: 200px;
+    }
+}
+@media screen and (max-width:404px){
+    .headerExperTxt p{
+        margin-top: 15px;
+    }
 }

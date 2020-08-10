@@ -1,35 +1,72 @@
-<header>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
+<div id="header2"></div>
+<header id="header" class="header">
+    <div class="container">    
+        <div class="topnav" id="myTopnav">
+            <a class="navbar-brand" [routerLink]="[ '/home']">
+                <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Flogo.png?alt=media&token=dee6a73e-7359-483d-87df-4bd2d3c82e81" alt="logo">
+            </a>            
+            <a class="activeA specialA" routerLinkActive="active" [routerLink]="['/shop']" (click)="myFunc2()">SHOP</a>
+            <a class="activeA" routerLinkActive="active" [routerLink]="['/team']" (click)="myFunc2()">TEAM</a>
+            <a class="activeA" routerLinkActive="active" [routerLink]="['/events']" (click)="myFunc2()">EVENTS</a>
+            <a class="activeA" routerLinkActive="active" [routerLink]="['/experiences']" (click)="myFunc2()">EXPERIANCE</a>
+            <a class="activeA" routerLinkActive="active" [routerLink]="['/blog']" (click)="myFunc2()">BLOG</a>
+            <a class="activeA" routerLinkActive="active" [routerLink]="['/contact']" (click)="myFunc2()">CONTACT US</a>
+            <div class="form-inline" id="searchIconsBlock">
+                <a id="firstSpriteHeader" [routerLink]="[ '/customer' ]"></a>
+                <a id="secondSpriteHeader" (click)="search()"></a>
+                <div class="mediaHeader">
+                       
+                </div>
+            </div>
+            <div class="search" id="search">
+                <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+                    <input autofocus class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search">
+                    <a id="secondSpriteHeader" (click)="closeSearch()"></a>
+                </form>
+            </div>
+            <a href="javascript:void(0);" class="icon" (click)="myFunction()">&#9776;</a>
+      </div>
+    </div>
+</header>
+
+
+<!-- <nav class="navbar navbar-expand-md">
             <a class="navbar-brand" [routerLink]="[ '/home']">
                 <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Flogo.png?alt=media&token=dee6a73e-7359-483d-87df-4bd2d3c82e81" alt="logo">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" [routerLink]="['/shop']">SHOP</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/shop']">SHOP</a>
                     </li>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" [routerLink]="['/team']">TEAM</a>
+                    <li class="nav-item" >
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/team']">TEAM</a>
                     </li>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" [routerLink]="['/events']">EVENTS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/events']">EVENTS</a>
                     </li>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" [routerLink]="['/experiences']">EXPERIANCE</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/experiences']">EXPERIANCE</a>
                     </li>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link">COMPANY</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/blog']">BLOG</a>
                     </li>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link">CONTACT</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/contact']">CONTACT US</a>
                     </li>
                 </ul>
             </div>
-            <div class="form-inline">
-                <a href="" id="firstSpriteHeader" [routerLink]="[ '/customer' ]"></a>
-                <a href="" id="secondSpriteHeader"></a>
+            <div class="form-inline" id="searchIconsBlock">
+                <a id="firstSpriteHeader" [routerLink]="[ '/customer' ]"></a>
+                <a id="secondSpriteHeader" (click)="search()"></a>
+                <div class="mediaHeader">
+                       
+                </div>
             </div>
-        </nav>
-    </div>
-</header>
+            <div class="search" id="search">
+                <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+                    <input autofocus class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search">
+                    <a id="secondSpriteHeader" (click)="closeSearch()"></a>
+                </form>
+            </div>
+        </nav> -->

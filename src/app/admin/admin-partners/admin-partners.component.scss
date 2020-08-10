@@ -1,0 +1,25 @@
+.buttonBlock{
+    text-align: right;
+}
+.buttonBlock button{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.buttonBlock button:hover{
+    background-color: #555;
+}
+td img{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+}
+input, textarea{
+    margin-bottom: 20px;
+}
+.btnGroup{
+    width: 45%;
+    margin: 10px;
+}

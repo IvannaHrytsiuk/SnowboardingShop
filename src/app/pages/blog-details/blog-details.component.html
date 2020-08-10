@@ -1,1 +1,49 @@
-<p>blog-details works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <img src={{view?.image}} alt="">
+            <h2>{{view?.title}}</h2>
+            <p>{{view?.textPriview}}</p>
+            <div class="videoBlock">
+                <iframe [src]='url' frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p innerHTML={{view?.text}}></p>
+            <hr>
+            <h4>You can also follow us on <a href="https://www.facebook.com/">Facebook</a>, <a href="https://www.instagram.com/">Instagram</a>, <a href="https://twitter.com/">Twitter</a> and <a href="http://youtube.com/">YouTube</a>.</h4>
+        </div>
+        <div class="col-md-4">
+            <h3 class="headAtrac">The best sports event and festivals</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fetommorowlend.jpg?alt=media&token=55d53f5e-d770-4710-98c2-d437d78f26bc" >
+                </div>
+                <div class="col-sm-7">                    
+                    <span class="number">1</span>
+                    <br>
+                    <span class="text" routerLink='/events'>TOMORROWLEND</span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fe2022-Winter-Olympics.jpg?alt=media&token=77686bc8-9479-4d9b-83f1-9767e263a963" >
+                </div>
+                <div class="col-sm-7">
+                    <span class="number">2</span>
+                    <span class="text" routerLink='/events'>WINTER OLIMPIC GAME</span>                
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2F30443225_1831138480271266_3430025100936609792_n.jpg?alt=media&token=f070f6c3-cd56-40bb-aba8-79944e740bab" >
+                </div>
+                <div class="col-sm-7">
+                    <span class="number">3</span>
+                    <span class="text" routerLink="/events">ELECTRIC MOUNTAIN </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

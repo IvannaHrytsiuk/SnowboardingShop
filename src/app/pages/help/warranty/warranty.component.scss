@@ -1,0 +1,48 @@
+.row{
+    margin: 40px 0;
+}
+.col-md-3, .col-md-9{
+    color:#555
+}
+.col-md-3 a{
+    text-decoration: none;
+    outline: none;
+    color: #555;
+}
+.col-md-3 a:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+.col-md-9{
+    padding-left: 50px;
+}
+.col-md-9 div{
+    margin-bottom: 50px;
+}
+.col-md-9 h5{
+    font-weight: 700;
+}
+.col-md-9 h4{
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:991px){
+    .col-md-3{
+        display: none;
+    }
+    .col-md-9{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding:0;
+    }
+}
+@media screen and (max-width:509px){
+    .col-md-9 div{
+        margin-bottom: 25px;
+    }
+    hr{
+        margin-bottom: 0;
+    }
+}
+

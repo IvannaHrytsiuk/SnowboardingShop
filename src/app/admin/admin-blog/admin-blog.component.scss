@@ -1,7 +1,10 @@
 .card{
     width: 30%;
-    margin: 2%;
+    margin: 19px;
     min-height: 100px;
+}
+.card-img-top{
+    height: 240px;
 }
 .modal-body img{
     width: 100%;
@@ -35,4 +38,8 @@ input, select{
 textarea{
     height: 100px;
     margin-bottom: 20px;
+}
+.modal-header h4{
+    font-weight: 700;
+    text-align: center;
 }

@@ -1,0 +1,149 @@
+.container{
+    padding-top: 100px;
+}
+.col-md-4 h3{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.col-sm-5 img{
+    width: 100%;
+}
+.number{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #555;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.text{
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+    line-height: 2;
+}
+.text:hover{
+    color: #ffc107;
+    cursor: pointer;
+}
+.col-md-4, .col-md-8{
+    margin: 50px 0;
+}
+.videoBlock{
+    padding:20px;
+    box-shadow: 0px 0px 5px 0px rgba(85,85,85,1);
+    margin: 30px 0;
+    height: 400px;
+}
+.col-md-8 img{
+    width: 100%;
+    height: 350px;
+}
+.col-md-8 p{
+   font-size: 18px;
+   text-align: justify;
+   line-height: 1.5;
+}
+.col-md-8 h2{
+   text-align: center;
+   font-weight: 700;
+   font-size: 38px;
+   margin: 20px 0;
+}
+h4 a{
+    color: #dc3545;
+    cursor: pointer;
+    text-decoration: none;
+}
+h4{
+    color:#555;
+    font-weight: 700;
+    line-height: 1.7;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1199px){
+    .col-md-4 h3{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:1199px){
+    .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top:30px;
+        margin-bottom: 20px;
+    }
+    .col-md-4{
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    br{
+        display: none;
+    }
+    .col-sm-5 img{
+        width: 90%;
+    }
+}
+@media screen and (max-width:767px){
+    .container{
+        max-width: 600px;
+    }
+    .col-md-8 img{
+        height: 300px;
+    }
+    .col-md-8 h2{
+        font-size: 35px;
+    }
+    .videoBlock{
+        height: 340px;
+    }
+    .col-md-4 {
+        flex: 0 0 95%;
+        max-width: 95%;
+    }
+}
+@media screen and (max-width:575px){
+    .container{
+        padding-top: 88px;
+        width: 103vw;
+    }
+    .col-md-4{
+        display: none;
+    }
+    .videoBlock{
+        height: 300px;
+    }
+}
+@media screen and (max-width:575px){
+    .videoBlock{
+        height: 270px;
+    }
+}
+@media screen and (max-width:466px){
+    .videoBlock{
+        height: 250px;
+    }
+    .col-md-8 h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:427px){
+    .videoBlock{
+        height: 220px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:370px){
+    .videoBlock{
+        height: 200px;
+    }
+}

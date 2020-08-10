@@ -11,7 +11,10 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-
+  arrLowPrice:any;
+  arrHighPrice:any;
+  arrAZ:any;
+  arrZA:any;
   chebox:string;
   chebox2:string;
   chebox3:string;
@@ -49,10 +52,108 @@ export class ShopComponent implements OnInit {
           data = data.filter(p => p.categoriesId == category);
         }
         this.products = data;
+        const lowPrice = []; 
+        this.products.forEach(val => lowPrice.push(Object.assign({}, val)));
+        lowPrice.sort(this.sortByLowPrice);
+        this.arrLowPrice = lowPrice;
+        const highPrice = []; 
+        this.products.forEach(val => highPrice.push(Object.assign({}, val)));
+        highPrice.sort(this.sortByHighPrice);
+        this.arrHighPrice = highPrice;
+        const nameAZ = []; 
+        this.products.forEach(val => nameAZ.push(Object.assign({}, val)));
+        nameAZ.sort(this.sortByAZ);
+        this.arrAZ = nameAZ;
+        const nameZA = []; 
+        this.products.forEach(val => nameZA.push(Object.assign({}, val)));
+        nameZA.sort(this.sortByZA);
+        this.arrZA = nameZA;
       },
       err => {
         console.log(err)
-      }
+      } 
     )
+  }
+  sortByLowPrice(a, b){
+      if ( a.price < b.price ){
+        return -1;
+      }
+      if ( a.price > b.price ){
+        return 1;
+      }
+      return 0;    
+  }
+  sortByHighPrice(a, b){
+      if ( a.price > b.price ){
+        return -1;
+      }
+      if ( a.price < b.price ){
+        return 1;
+      }
+      return 0;    
+  }
+  sortByAZ(a, b){
+      if ( a.productName < b.productName ){
+        return -1;
+      }
+      if ( a.productName > b.productName ){
+        return 1;
+      }
+      return 0;    
+  }
+  sortByZA(a, b){
+      if ( a.productName > b.productName ){
+        return -1;
+      }
+      if ( a.productName < b.productName ){
+        return 1;
+      }
+      return 0;    
+  }
+  
+  showLowPrice(){
+    document.getElementById('standart').style.display = 'none';
+    document.getElementById('highPrice').style.display = 'none';
+    document.getElementById('nameAZ').style.display = 'none';
+    document.getElementById('nameZA').style.display = 'none';
+    document.getElementById('lowPrice').style.display = 'flex';
+    document.getElementById('activeA1').classList.add('active');
+    document.getElementById('activeA2').classList.remove('active');
+    document.getElementById('activeA3').classList.remove('active');
+    document.getElementById('activeA4').classList.remove('active');
+
+  }
+  showHighPrice(){
+    document.getElementById('standart').style.display = 'none';
+    document.getElementById('lowPrice').style.display = 'none';
+    document.getElementById('nameAZ').style.display = 'none';
+    document.getElementById('nameZA').style.display = 'none';
+    document.getElementById('highPrice').style.display = 'flex';
+    document.getElementById('activeA1').classList.remove('active');
+    document.getElementById('activeA2').classList.add('active');
+    document.getElementById('activeA3').classList.remove('active');
+    document.getElementById('activeA4').classList.remove('active');
+  }
+  showAZ(){
+    document.getElementById('standart').style.display = 'none';
+    document.getElementById('lowPrice').style.display = 'none';
+    document.getElementById('highPrice').style.display = 'none';
+    document.getElementById('nameZA').style.display = 'none';
+    document.getElementById('nameAZ').style.display = 'flex';
+    document.getElementById('activeA1').classList.remove('active');
+    document.getElementById('activeA2').classList.remove('active');
+    document.getElementById('activeA3').classList.add('active');
+    document.getElementById('activeA4').classList.remove('active');
+  }
+  showZA(){
+    document.getElementById('standart').style.display = 'none';
+    document.getElementById('lowPrice').style.display = 'none';
+    document.getElementById('highPrice').style.display = 'none';
+    document.getElementById('nameAZ').style.display = 'none';
+    document.getElementById('nameZA').style.display = 'flex';
+    document.getElementById('activeA1').classList.remove('active');
+    document.getElementById('activeA2').classList.remove('active');
+    document.getElementById('activeA3').classList.remove('active');
+    document.getElementById('activeA4').classList.add('active');
   }
 }

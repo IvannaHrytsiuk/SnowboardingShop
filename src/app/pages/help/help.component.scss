@@ -1,0 +1,107 @@
+.main{
+    padding-top: 100px;
+}
+.header{
+    width: 100%;
+    background-color: #ffc107;
+    height: 170px;
+    padding-top: 4%;
+}
+.headerTxt{
+    width: 70%;
+    margin: auto;
+}
+.headerTxt h3{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px
+}
+nav, .btn-group{
+    margin-top: 18px;
+}
+nav a{
+    color:#555;
+    font-size: 18px;
+    padding: 5px;
+    margin: 0 20px;
+}
+nav a:hover{
+    border-bottom: 2px solid #ffc107;
+
+}
+.active{
+    border-bottom: 2px solid black;
+}
+button{
+    text-align: left;
+}
+span{
+    margin-left: 82%;
+}
+.btn-group{
+    display: none;
+}
+@media screen and (max-width:991px){
+    .header{
+        padding-top: 5%;
+    }
+}
+@media screen and (max-width:768px){
+    .header{
+        padding-top: 6%;
+    }
+    .btn-group{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    span{
+        margin-left: 77%;
+    }
+}
+@media screen and (max-width:585px){
+    .main{
+        padding-top: 88px;
+    }
+}
+@media screen and (max-width:575px){
+    .main{
+        width: 103vw;
+    }
+}
+@media screen and (max-width:509px){
+    span{
+        margin-left: 73%;
+    }
+    .header{
+        height: 140px;
+    }
+}
+@media screen and (max-width:422px){
+    span{
+        margin-left: 70%;
+    }
+    .header{
+        padding-top: 9%;
+    }
+    .headerTxt h3{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:385px){
+    span{
+        margin-left: 67%;
+    }
+    .headerTxt{
+        width: 90%;
+    }
+}
+@media screen and (max-width:352px){
+    span{
+        margin-left: 62%;
+    }
+}

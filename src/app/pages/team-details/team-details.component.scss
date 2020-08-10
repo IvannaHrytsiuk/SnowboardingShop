@@ -1,3 +1,6 @@
+.main{
+    padding-top: 100px;
+}
 .imageBlockBG{
     height: 300px;
     width: 100%;
@@ -27,4 +30,120 @@
 .factTxt{
     margin-top: 20px;
     font-size: 13px;
+}
+@media screen and (max-width:991px){
+    .imageBlockBG{
+        height: 250px;   
+    }
+    .col-md-9{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .detailsInf{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .factTxt{
+        font-size: 14px;
+    }
+    .col-md-3{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-md-3 p{
+        font-size: 14px;
+    }
+    .col-md-9 img{
+        height: 350px;
+    }
+}
+@media screen and (max-width:767px){
+    .imageBlockBG{
+        height: 200px;   
+    }
+    .col-md-9 img{
+        height: 290px;
+    }
+}
+@media screen and (max-width:585px){
+    .main{
+        padding-top: 88px;
+    }
+}
+@media screen and (max-width:575px){
+    .main{
+        width: 103vw;
+    }
+    .imageBlockBG h3{
+        font-size: 43px;
+        padding-top: 10%;
+    }
+    .col-md-9{
+        flex: 0 0 92%;
+        max-width: 92%;
+        margin: 0 auto;
+    }
+    .col-md-3{
+        flex: 0 0 92%;
+        max-width: 92%;
+        margin: 0 auto;
+    }
+    .col-md-9 img{
+        height: 285px;
+    }
+}
+@media screen and (max-width:510px){
+    .imageBlockBG{
+        height: 150px;
+    }
+    .imageBlockBG h3{
+        font-size: 35px;
+        padding-top: 8%;
+    }
+    .col-md-9 img{
+        height: 270px;
+    }
+    .col-md-3, .col-md-9{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:441px){
+    .imageBlockBG h3{
+        font-size: 26px;
+        padding-top: 11%;
+    }
+    .col-md-9 img{
+        height: 240px;
+    }
+    .col-md-3, .col-md-9{
+        flex: 0 0 89%;
+        max-width: 89%;
+    }
+}
+@media screen and (max-width:381px){
+    .col-md-9 img{
+        height: 225px;
+    }
+    .col-md-3, .col-md-9{
+        flex: 0 0 87%;
+        max-width: 87%;
+    }
+}
+@media screen and (max-width:360px){
+    .imageBlockBG {
+        height: 120px;
+    }
+    .imageBlockBG h3{
+        padding-top: 12%;
+    }
+    .col-md-9 img{
+        height: 210px;
+    }
+}
+@media screen and (max-width:330px){
+    .col-md-9 img{
+        height: 190px;
+    }
 }

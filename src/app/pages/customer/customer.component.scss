@@ -1,3 +1,6 @@
+.container{
+    padding-top: 100px;
+}
 .col-md-6{
     margin: 70px 10px;
     flex: 0 0 48%;
@@ -35,4 +38,29 @@ label{
 }
 .login{
     text-align: right;
+}
+small{
+    color:#dc3545;
+}
+@media screen and (max-width:1199px){
+    .col-md-6{
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+    .login{
+        margin-top: 39px;
+    }
+}
+@media screen and (max-width:991px){
+    .col-md-6{
+        margin: 30px 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .buttonRegister, .login{
+        text-align: left;
+    }
+    .login{
+        margin-top: 20px;
+    }
 }

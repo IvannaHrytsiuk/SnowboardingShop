@@ -1,1 +1,18 @@
-<p>blog works!</p>
+<div class="main">
+    <div class="headerExper">
+        <div class="headerExperTxt">
+            <h3>OUR BLOG</h3>
+        </div>
+    </div>
+    <div class="container">  
+        <div class="block" *ngFor="let public of publications">
+            <div class="image" [ngStyle]="{'background-image': 'url('+public.image+')'}">
+                <div class="inside">
+                    <h2>{{public.title}}</h2>
+                    <p [ngStyle]="{'font-weight': public.fontWeight, 'font-family': public.fontFamily, 'font-size': public.fontSize }" innerHTML='{{public.textPriview}}'></p>
+                    <button type="button" class="btn btn-warning" [routerLink]="['/blog/'+public.title, public.id]">Read more</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
