@@ -1,8 +1,18 @@
 footer{
+<<<<<<< HEAD
     height: 100%;
     background-color: black;
     padding-top: 40px;
 }
+=======
+    height: 320px;
+    background-color: black;
+    padding-top: 40px;
+}
+.isActive{
+    height: 500px;
+}
+>>>>>>> 33a0a0c... first commit
 h4{
     color: white;
     font-size: 1.1em;
@@ -119,13 +129,17 @@ option:hover{
 a:hover{
     color: white;
 }
+<<<<<<< HEAD
 hr{
     display: none;
 }
+=======
+>>>>>>> 33a0a0c... first commit
 #footerEmail input[type="submit"]:hover{
     background-color: black;
     color: white;
 }
+<<<<<<< HEAD
 .isActive{
     height: 500px;
 }
@@ -178,3 +192,5 @@ hr{
         height: 1205px;
     }
 }
+=======
+>>>>>>> 33a0a0c... first commit

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { CategoryAdminService } from 'src/app/shared/services/category-admin.service';
 import { AdmCategory } from 'src/app/shared/interfaces/category-admin.interface';
+=======
+>>>>>>> 33a0a0c... first commit
 
 @Component({
   selector: 'app-footer',
@@ -9,14 +12,21 @@ import { AdmCategory } from 'src/app/shared/interfaces/category-admin.interface'
 })
 export class FooterComponent implements OnInit {
 statusClass = '';
+<<<<<<< HEAD
   constructor( private categoriesService:CategoryAdminService) { }
  category:Array<AdmCategory>;
   ngOnInit(): void {
     this.getAdminCategory();
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+>>>>>>> 33a0a0c... first commit
   }
   setActiveClass(){
     this.statusClass = 'isActive';
   }
+<<<<<<< HEAD
   private getAdminCategory():void{
     this.categoriesService.getJSONAllCategories().subscribe(
       dataCategories => {
@@ -27,4 +37,6 @@ statusClass = '';
       }
     )
   }
+=======
+>>>>>>> 33a0a0c... first commit
 }

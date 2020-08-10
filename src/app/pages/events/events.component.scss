@@ -1,4 +1,8 @@
 .container{
+<<<<<<< HEAD
+=======
+    margin-top: 40px;
+>>>>>>> 33a0a0c... first commit
     margin-bottom: 60px;
 }
 .col-sm-5 img{
@@ -20,6 +24,7 @@
     color: #555;
     line-height: 2;
 }
+<<<<<<< HEAD
 .col-md-8, .col-md-4{
     margin-top: 40px;
 }
@@ -27,6 +32,11 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #555;
+=======
+.col-md-4 h3{
+    font-weight: 700;
+    text-transform: uppercase;
+>>>>>>> 33a0a0c... first commit
 }
 .col-md-8 h2{
     font-weight: 700;
@@ -88,6 +98,7 @@
 .col-sm-6:hover{
     border: none;
     outline: none;
+<<<<<<< HEAD
 }
 .last{
     display: none;
@@ -204,4 +215,6 @@
     .infoBox h5{
         font-size: 16px;
     }
+=======
+>>>>>>> 33a0a0c... first commit
 }

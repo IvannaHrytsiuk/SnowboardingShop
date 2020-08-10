@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mainBlock{
     padding-top: 100px;
 }
@@ -12,6 +13,14 @@
     max-width: 1140px;
     margin: auto;
     padding-top: 5%;
+=======
+.detailsHeader{
+    width: 100%;
+    height: 230px;
+    background: rgb(85,85,85);
+    background: linear-gradient(90deg, rgba(85,85,85,1) 38%, rgba(133,133,133,1) 100%);
+    color: white;
+>>>>>>> 33a0a0c... first commit
 }
 .col-md-8 h1{
     font-weight: 700;
@@ -47,7 +56,10 @@
 }
 .datemark{
     font-size: 13px;
+<<<<<<< HEAD
     margin: 0 5%;
+=======
+>>>>>>> 33a0a0c... first commit
 }
 .book img{
     width: 45px;
@@ -124,7 +136,10 @@
 }
 .information{
     margin: 50px 0;
+<<<<<<< HEAD
     text-align: justify;
+=======
+>>>>>>> 33a0a0c... first commit
 }
 .information h2{
     text-align: center;
@@ -139,10 +154,16 @@
     line-height: 1.6;
 }
 .photos{
+<<<<<<< HEAD
     background-size: 100%;
     background-repeat: no-repeat;
     height: 420px;
     background-position: center;
+=======
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 420px;
+>>>>>>> 33a0a0c... first commit
 }
 p a, h4 a{
     color: #dc3545;
@@ -154,6 +175,7 @@ p a, h4 a{
 }
 .information h4{
     margin-left:0;
+<<<<<<< HEAD
 }
 iframe{
     width: 690px;
@@ -453,4 +475,6 @@ iframe{
     .book{
         padding: 8px 12px;
     }
+=======
+>>>>>>> 33a0a0c... first commit
 }
