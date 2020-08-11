@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CategoryAdminService } from 'src/app/shared/services/category-admin.service';
 import { AdmCategory } from 'src/app/shared/interfaces/category-admin.interface';
-=======
-import { Component, OnInit } from '@angular/core';
->>>>>>> 33a0a0c... first commit
 
 @Component({
   selector: 'app-home',
@@ -12,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-<<<<<<< HEAD
   category:Array<AdmCategory>;
   constructor( private categoriesService:CategoryAdminService) { }
 
@@ -30,12 +25,4 @@ export class HomeComponent implements OnInit {
       }
     )
   }
-=======
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
->>>>>>> 33a0a0c... first commit
 }

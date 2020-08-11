@@ -1,10 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule   } from '@angular/forms';
-=======
-import { FormsModule } from '@angular/forms';
->>>>>>> 33a0a0c... first commit
 import { HttpClientModule } from '@angular/common/http';
 import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 import { ngxUiLoaderConfig } from './preloading-config';
@@ -17,11 +13,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalModule } from 'ngx-bootstrap/modal';
-<<<<<<< HEAD
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 
-=======
->>>>>>> 33a0a0c... first commit
 
 // component
 import { AppRoutingModule } from './app-routing.module';
@@ -44,7 +37,6 @@ import { TeamDetailsComponent } from './pages/team-details/team-details.componen
 import { EventsComponent } from './pages/events/events.component';
 import { EventDetailsComponent } from './pages/event-details/event-details.component';
 import { ExperiencesComponent } from './pages/experiences/experiences.component';
-<<<<<<< HEAD
 import { BlogComponent } from './pages/blog/blog.component';
 import { AdminBlogComponent } from './admin/admin-blog/admin-blog.component';
 import { BlogDetailsComponent } from './pages/blog-details/blog-details.component';
@@ -59,12 +51,6 @@ import { ReturnsComponent } from './pages/help/returns/returns.component';
 import { WarrantyComponent } from './pages/help/warranty/warranty.component';
 import { PrivacyComponent } from './pages/help/privacy/privacy.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-=======
-
-
-
-
->>>>>>> 33a0a0c... first commit
 
 
 @NgModule({
@@ -88,7 +74,6 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     EventsComponent,
     EventDetailsComponent,
     ExperiencesComponent,
-<<<<<<< HEAD
     BlogComponent,
     AdminBlogComponent,
     BlogDetailsComponent,
@@ -103,16 +88,11 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     WarrantyComponent,
     PrivacyComponent,
     PageNotFoundComponent,
-=======
->>>>>>> 33a0a0c... first commit
   ],
   imports: [
     BrowserModule,
     FormsModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
-=======
->>>>>>> 33a0a0c... first commit
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -123,10 +103,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     NgxUiLoaderRouterModule,
     TabsModule.forRoot(),
     ModalModule.forRoot(),
-<<<<<<< HEAD
     CollapseModule.forRoot(),
-=======
->>>>>>> 33a0a0c... first commit
   ],
   providers: [],
   bootstrap: [AppComponent]

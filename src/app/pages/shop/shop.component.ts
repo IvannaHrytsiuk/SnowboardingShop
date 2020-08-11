@@ -11,14 +11,10 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-<<<<<<< HEAD
   arrLowPrice:any;
   arrHighPrice:any;
   arrAZ:any;
   arrZA:any;
-=======
-
->>>>>>> 33a0a0c... first commit
   chebox:string;
   chebox2:string;
   chebox3:string;
@@ -56,7 +52,6 @@ export class ShopComponent implements OnInit {
           data = data.filter(p => p.categoriesId == category);
         }
         this.products = data;
-<<<<<<< HEAD
         const lowPrice = []; 
         this.products.forEach(val => lowPrice.push(Object.assign({}, val)));
         lowPrice.sort(this.sortByLowPrice);
@@ -160,12 +155,5 @@ export class ShopComponent implements OnInit {
     document.getElementById('activeA2').classList.remove('active');
     document.getElementById('activeA3').classList.remove('active');
     document.getElementById('activeA4').classList.add('active');
-=======
-      },
-      err => {
-        console.log(err)
-      }
-    )
->>>>>>> 33a0a0c... first commit
   }
 }

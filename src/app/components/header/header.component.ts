@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Component, OnInit, HostListener } from '@angular/core';
-=======
-import { Component, OnInit } from '@angular/core';
->>>>>>> 33a0a0c... first commit
 
 @Component({
   selector: 'app-header',
@@ -10,17 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-<<<<<<< HEAD
 count:number = 0;
 display:boolean = true;
-=======
-
->>>>>>> 33a0a0c... first commit
   constructor() { }
 
   ngOnInit(): void {
   }
-<<<<<<< HEAD
   @HostListener('window:scroll', ['$event'])
 
 onWindowScroll() {
@@ -51,7 +42,4 @@ onWindowScroll() {
     var x = document.getElementById("header");
     x.className = "header";
   }
-=======
-
->>>>>>> 33a0a0c... first commit
 }

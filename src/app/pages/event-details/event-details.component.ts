@@ -31,32 +31,18 @@ sec:any;
 count:any;
 url:any;
 str:string;
-<<<<<<< HEAD
 lat:any;
 lng:any;
-=======
-lat:number;
-lng:number;
->>>>>>> 33a0a0c... first commit
 @ViewChild('maper') mapElement: any;
 maper: google.maps.Map;
   constructor(private route: ActivatedRoute,
     private eventService:AdminEventService,
     private _sanitizer: DomSanitizer) { 
-<<<<<<< HEAD
-=======
-     
-
->>>>>>> 33a0a0c... first commit
     }
 
   ngOnInit(): void {
     this.getEvent();
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 33a0a0c... first commit
   getEvent():void{
     const id = +this.route.snapshot.paramMap.get('id');
     this.eventService.getJSONOneEvents(id).subscribe(
@@ -68,7 +54,6 @@ maper: google.maps.Map;
         this.timer();
         this.url = this._sanitizer.bypassSecurityTrustResourceUrl(this.viewEvent.video);
         this.str = this.viewEvent.location.substring(0, this.viewEvent.location.indexOf(','));
-<<<<<<< HEAD
         const mapProperties = {
           center: new google.maps.LatLng(this.lat, this.lng),
           zoom: 15,
@@ -79,21 +64,6 @@ maper: google.maps.Map;
     )
   }
   
-=======
-        this.maps();
-
-      }
-    )
-  }
-  maps(): void {
-    const mapProperties = {
-         center: new google.maps.LatLng(this.lat, this.lng),
-         zoom: 15,
-         mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    this.maper = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
- }
->>>>>>> 33a0a0c... first commit
   timer():void{
     this.datestr = this.viewTime.slice(3,6);
     this.datestr1 = this.viewTime.slice(0,2);
