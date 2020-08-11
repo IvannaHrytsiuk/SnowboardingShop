@@ -14,6 +14,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 
 // component
@@ -104,6 +105,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     TabsModule.forRoot(),
     ModalModule.forRoot(),
     CollapseModule.forRoot(),
+    AlertModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,9 @@
 <div class="container">
     <div class="row">
+        <div class="alert alert-danger" role="alert" [hidden]='isHidden'>
+            You are already registered.
+            <a [routerLink]="[ '/customer']" class="alert-link">Please, sing in.</a>
+        </div>
         <h3>PERSONAL INFORMATION</h3>
         <form>
             <div class="row">
@@ -24,7 +28,7 @@
                     <div class="invalid-feedback" [hidden] = "pass.valid || pass.untouched">Please provide a valid value.</div>
                 </div>
             </div>
-            <a [routerLink]="[ '/customer']"><button [disabled] = "fName.invalid || lName.invalid || eAddress.invalid || pass.invalid" class="btn btn-warning" (click)="addNewUser()">Create account</button></a>
+            <a><button [disabled] = "fName.invalid || lName.invalid || eAddress.invalid || pass.invalid" class="btn btn-warning" (click)="addNewUser()">Create account</button></a>
           </form>
     </div>
 </div>

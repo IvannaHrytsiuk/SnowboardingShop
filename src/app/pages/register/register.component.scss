@@ -4,7 +4,7 @@ form{
 }
 h3{
     font-size: 1em;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .col-md-6{
     margin-top: 20px;
@@ -18,4 +18,13 @@ button{
 }
 .invalid-feedback{
     display: block;
+}
+.container{
+    padding-top: 100px;
+}
+.alert{
+    width: 100%;
+    height: 70px;
+    line-height: 2.5;
+    margin-top: 30px;
 }

@@ -41,5 +41,7 @@ export class RegisterUserService {
   updateJSONUser(user: RegUser):Observable<Array<RegUser>>{
     return this.http.put<Array<RegUser>>(`${this.url}/${user.email}`, user);
   }
-  
+  getJSONOneUser(id:number):Observable<RegUser>{
+    return this.http.get<RegUser>(`${this.url}/${id}`)
+  }
 }

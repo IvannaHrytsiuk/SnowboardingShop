@@ -25,21 +25,18 @@
       "password": "admin123"
     },
     {
-      "firstName": 1,
-      "lastName": "Oleh",
-      "email": "Fetisov",
-      "password": "olg@gmail.com",
-      "id": 2
-<<<<<<< HEAD
+      "id": 2,
+      "firstName": "Oleg",
+      "lastName": "Fetisov",
+      "email": "olg@gmail.com",
+      "password": "123123123"
     },
     {
       "id": 3,
-      "firstName": "hgfhgfhgfhgfhgfhgf",
-      "lastName": "grdfgdf",
-      "email": "fdgdgsfg@fgfd.gvh",
-      "password": "fdgdfgdfg"
-=======
->>>>>>> 33a0a0c... first commit
+      "firstName": "Pavlo",
+      "lastName": "Pavliv",
+      "email": "pp@gmail.com",
+      "password": "111111"
     }
   ],
   "products": [
@@ -234,13 +231,8 @@
       ],
       "video": "https://www.youtube.com/embed/2Zj3bb0Cv70",
       "location": "Beijing, China",
-<<<<<<< HEAD
       "locationLat": 39.9267,
       "locationLng": 116.356,
-=======
-      "locationLat":39.9267,
-      "locationLng": 116.3560,
->>>>>>> 33a0a0c... first commit
       "slogan": "92 Nations – One Goal, One Motto, One Place",
       "description": "The 2022 Winter Olympics, also known as XXIV Olympic Winter Games will be the 24th winter multi-sports event by IOC.<br><br>On July 31st, 2015 the 128th IOC session took place where Beijing was elected as the host city for winter games 2022. For the first time, China is going to host the Winter Olympics.<br><br>However, back in 2008 Beijing was the host city for the Summer Olympics and in 2022, Beijing will become the first city to host both summer and Winter Olympics. It will be consecutive fourth time that the Olympics are going to be held in East Asia.<br><br>Along with the new venues they are also planning to persist with some of the same venues used in 2008, whereas the Beijing National stadium will also be staged for the opening and closing ceremonies.<br><br>A few of the events will likely happen outside of the city, depending on the nature of the sports.<br><br>Bobsleigh, alpine skiing, and luge is going to be contested in Yanqing (Xiahaituo Mountain area) it’s just 56 miles northwest from the main Beijing city center.<br><br>What makes this particular venue fascinating is one fact: it doesn’t snow there!",
       "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Fe2022-Winter-Olympics.jpg?alt=media&token=77686bc8-9479-4d9b-83f1-9767e263a963",
@@ -264,11 +256,7 @@
       ],
       "video": "https://www.youtube.com/embed/tJptg7QUtIc",
       "location": " Mayrhofen, Austria",
-<<<<<<< HEAD
       "locationLat": 47.1631,
-=======
-      "locationLat":47.1631,
->>>>>>> 33a0a0c... first commit
       "locationLng": 11.8595,
       "slogan": "An Explosive Thrill of Arctic Proportions ",
       "description": "Five days, 100 performances, 650km of piste and one hell of a snow party experience. The Snowbombing festival is one of the best mountain festivals worldwide and takes place in west Austria’s town of Mayrhofen. It’s definitely something you are not going to want to miss.<br><br>The glorious mountain scape has it all. From blue runs to red runs and the Harikiri, Europe’s steepest incline, SB provides perfect terrains for beginners to snow-shredding experts. The ‘hof hosts daily lessons from numerous qualified instructors to take your ski and boarding skills to the next level.<br><br>Take a crack at the Penken and Ahorn slopes as well as the Vans Penken Park for backcountry skiing, epic carving and freestyle tricks. After some adrenaline-filled runs, head over to one of the five mountain venues for massive dance parties on the piste.<br><br>Can’t get enough of the music? Headline venues offer world-class DJs spinning enchanting tracks in arctic forests, Austria’s streets and underground arenas. There is no shortage of live music or epic stages.<br><br>Hitting the slopes by day and partying all night can take a toll on even the hardest ragers. That’s why the Snowbombing festival offers several ways for attendees to relax and unwind.<br><br>Decompress in top-tier spas or rooftop hot tubs. Stretch out your sore muscles in alpine yoga sessions amidst nature’s purest forests. Don’t forget to pig out or fine dine at the dozens of restaurants that the ‘hof has to offer!",
@@ -293,11 +281,7 @@
       ],
       "video": "https://www.youtube.com/embed/0_jmw1PEYkA",
       "location": " Liepkalnis, Vilnius, Lithuania",
-<<<<<<< HEAD
       "locationLat": 54.6555,
-=======
-      "locationLat":54.6555,
->>>>>>> 33a0a0c... first commit
       "locationLng": 25.3065,
       "slogan": "Red Bull Jump and Freeze is back in Lithuania",
       "description": "Embodied in hand cut, to read craziest winter event profile. Red Bull Jump & Freeze Lithuania “is a strange phenomenon in which people by home-made vehicles Skates of Hill and flies into the outdoor pool – in the middle of winter!<br><br>Viewers EXTRAORDINARY images fiesta of cost, and the list of participants is already full, even overflowing, so if you make your own and have not had time to register to take part in this year will have to settle for part of the audience.<br><br>The event will have held Radistai, the music will start Mamania, and your jumps assess Airinė Palšytė, Arunas Gibiežos and other more or less well-known actors. Specifically, they will evaluate not only shocks, but also what the Friends constructed participants.",
@@ -321,11 +305,7 @@
       ],
       "video": "https://www.youtube.com/embed/WnnJ7ct1MfA",
       "location": "Les Orres, France",
-<<<<<<< HEAD
       "locationLat": 44.491,
-=======
-      "locationLat":44.4910,
->>>>>>> 33a0a0c... first commit
       "locationLng": 6.5536,
       "slogan": "Throw some snowballs",
       "description": "Are you a fan of winter sports and festivals? Snowattack is the place for you and your gang.<br><br>It goes down in Les Orres located in the French Southern Alps. For the fourth time now, it will house the Snowattack festival.<br><br>With panoramic views over Serre-Poncon lake and a wonderful landscape of alpine pastures and forests of larch together with the Swiss pine, your holiday will surely get heated up. The event has sports, fun and chill programs during the day and you just can’t get enough.<br><br>To stir up the fun, there are hütte parties, carnival and adventure activities in the afternoon. An event is not considered complete without a concert and this is no exception.",
@@ -351,13 +331,8 @@
       ],
       "video": "https://www.youtube.com/embed/P0RMMKyRkJQ",
       "location": "Saalbach, Austria",
-<<<<<<< HEAD
       "locationLat": 47.3914,
       "locationLng": 12.6371,
-=======
-      "locationLat":47.3914,
-      "locationLng":12.6371,
->>>>>>> 33a0a0c... first commit
       "slogan": "is back in Saalbach for it’s 27th Anniversary",
       "description": "Most people know what inexorably rolls here for a party-avalanche on them. Those who have never had the pleasure are hereby warned. Three days and nights, almost completely deprived of sleep, it is announced on 14 Floors: full throttle. No escape. As well as if all Ortens and anytime a grandiose DJ Set runs.<br><br>If one wants to go to bed when Andhim take the barn apart? If you sleep when Mathias Kaden rocking the summit. Better not! Chilling is later! And also you can in Saalbach at its best. We look forward to a rad 27th Rave On Snow 2020 gathering in Austria.",
       "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Ferave-on-snow.jpg?alt=media&token=d136ad8a-0378-49f1-aea2-5da5efa5f742",
@@ -381,13 +356,8 @@
       ],
       "video": "https://www.youtube.com/embed/AufYnFuxNcU",
       "location": "Southern Alps, New Zealand",
-<<<<<<< HEAD
       "locationLat": -43.4974,
       "locationLng": 170.4927,
-=======
-      "locationLat":-43.4974,
-      "locationLng":170.4927,
->>>>>>> 33a0a0c... first commit
       "slogan": "are back in the Southern Alps",
       "description": "The best winter athletes in the world are heading to New Zealand’s Southern Alps once again for the seventh annual Winter Games NZ. Watch all the best compete in freestyle skiing, snowboarding, alpine skiing, cross-country skiing and curling then sit back and enjoy a full festival program across the region.<br><br>The Winter Games and the only one in the southern hemisphere and New Zealand’s largest winter sports event and one of the top 5 in the winter sports festivals in the world.",
       "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FeWinter-Games-NZ-1.jpg?alt=media&token=c8bf5e25-5dcb-4737-b2bc-c284c9d65029",
@@ -399,7 +369,6 @@
       "site": "https://www.wintergamesnz.kiwi/",
       "image1": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2FWinter-Games-NZ-Cardrona.jpg?alt=media&token=78b52950-d88f-4a7d-93df-5ab7cd54e22e"
     }
-<<<<<<< HEAD
   ],
   "blogs": [
     {
@@ -510,7 +479,5 @@
       "description": "AWOL Mountain Wear is all about getting lost in the moment, in the mountains and in the culture of snowsports. We find being in the mountains brings out our creative side, through a sense of freedom and exploration.\n<br><br>\nWe don’t design for no reason, behind every design or product we produce there is a story or a ecological incentive. Within design we have a duty to set an example, preserving organic, natural and sustainable processes, providing high quality products. Our clothing is built to last the cold winters chasing those fresh lines in Courchevel, to the chill of the morning due on the rocks on the Peak District. ",
       "image": "https://firebasestorage.googleapis.com/v0/b/snowshop-829da.appspot.com/o/images%2Flogo-AWOL-Mountain-Wear-Logo-2.png?alt=media&token=bd225b16-62fb-4e83-8552-2252b6facebe"
     }
-=======
->>>>>>> 33a0a0c... first commit
   ]
 }
