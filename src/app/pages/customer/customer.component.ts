@@ -61,6 +61,8 @@ export class CustomerComponent implements OnInit {
         } else if(this.password != this.usersFromEmail[0].password){
           this.isHidden2 = false;
           this.isHidden = true;
+        } else if(this.usersFromEmail[0].email == 'admin@gmail.com' && this.password == 'admin123'){
+          this.router.navigate(['/admin']);
         } else{
           this.router.navigate(['/user/id', this.usersFromEmail[0].id]);
         }
