@@ -30,6 +30,7 @@ import { ReturnsComponent } from './pages/help/returns/returns.component';
 import { WarrantyComponent } from './pages/help/warranty/warranty.component';
 import { PrivacyComponent } from './pages/help/privacy/privacy.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { UserComponent } from './pages/user/user.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   {path:'experiences', component: ExperiencesComponent},
   {path:'team', component: TeamComponent},
   {path:'team/:name/:id', component: TeamDetailsComponent},
+  {path:'user/id/:id', component: UserComponent },
   {path:'blog', component: BlogComponent},
   {path:'blog/:title/:id', component: BlogDetailsComponent},
   {path:'events', component: EventsComponent},

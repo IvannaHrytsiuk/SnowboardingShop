@@ -52,6 +52,7 @@ import { ReturnsComponent } from './pages/help/returns/returns.component';
 import { WarrantyComponent } from './pages/help/warranty/warranty.component';
 import { PrivacyComponent } from './pages/help/privacy/privacy.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { UserComponent } from './pages/user/user.component';
 
 
 @NgModule({
@@ -89,6 +90,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     WarrantyComponent,
     PrivacyComponent,
     PageNotFoundComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,

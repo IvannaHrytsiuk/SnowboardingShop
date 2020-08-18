@@ -37,6 +37,62 @@
       "lastName": "Pavliv",
       "email": "pp@gmail.com",
       "password": "111111"
+    },
+    {
+      "id": 4,
+      "firstName": "Vika",
+      "lastName": "Yevlah",
+      "email": "vika@gmail.com",
+      "password": "qazwsx123"
+    },
+    {
+      "id": 5,
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "email": "ii@gmail.com",
+      "password": "ivan111"
+    },
+    {
+      "id": 6,
+      "firstName": "werser",
+      "lastName": "sdfsdf",
+      "email": "sdfds@sdf.gh",
+      "password": "sdfdsf"
+    },
+    {
+      "id": 7,
+      "firstName": "gdssd",
+      "lastName": "sdgds",
+      "email": "dsgdfsd@sddsfg.ds",
+      "password": "asfafaf"
+    },
+    {
+      "id": 8,
+      "firstName": "sacas",
+      "lastName": "scacs",
+      "email": "ascas@df.sf",
+      "password": "ascascas"
+    },
+    {
+      "id": 9,
+      "firstName": "dsfds",
+      "lastName": "sdfds",
+      "email": "dsfsd@jh.ks",
+      "password": "sdfds"
+    },
+    {
+      "id": 10,
+      "firstName": "sdfs",
+      "lastName": "dsfsd",
+      "email": "dsfs@dsf.sdf",
+      "password": "dsfsdfs"
+    },
+    {
+      "id": 11,
+      "firstName": "dsc",
+      "lastName": "sdas",
+      "email": "asds@as.sd",
+      "password": "asdasd"
     }
   ],
   "products": [

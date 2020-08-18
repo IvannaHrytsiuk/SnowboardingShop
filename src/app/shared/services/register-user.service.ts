@@ -44,4 +44,7 @@ export class RegisterUserService {
   getJSONOneUser(id:number):Observable<RegUser>{
     return this.http.get<RegUser>(`${this.url}/${id}`)
   }
+  getJSONUserFromEmail(email:string):Observable<RegUser>{
+    return this.http.get<RegUser>(`${this.url}/?email=${email}`)
+  }
 }

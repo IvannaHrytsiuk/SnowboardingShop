@@ -59,18 +59,23 @@ export class RegisterComponent implements OnInit {
           )
             this.resetForm();
           }
-          const id = +this.route.snapshot.paramMap.get('id');
-            this.regUsersService.getJSONOneUser(id).subscribe(
-              data =>{
-                this.oneUser = data;
-              }
-            )
-          this.router.navigate(['/user/id'+ this.oneUser.id]);
+          this.getOne();
       },
       err => {
         console.log(err);
       }
     )
+  }
+  getOne(){
+    const id = +this.route.snapshot.paramMap.get('id');
+    console.log(id)
+      this.regUsersService.getJSONOneUser(id).subscribe(
+        data =>{
+          this.oneUser = data;
+        }
+      )
+      console.log(this.oneUser)
+    this.router.navigate(['/user/id'+ this.oneUser.id, this.oneUser.id]);
   }
   private getUser():void{
     this.regUsersService.getJSONUsers().subscribe(
